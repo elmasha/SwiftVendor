@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "650675477770",
+    "project_id": "swiftgas-65014",
+    "storage_bucket": "swiftgas-65014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650675477770:android:6aa5ae0547b6a6fb012ef3",
+        "android_client_info": {
+          "package_name": "com.gas.swiftel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650675477770-2ceovpj4i71db9i4s5ocec72duebf2hi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gas.swiftel",
+            "certificate_hash": "785fe5cdd935a518363e1189523ff8efca501580"
+          }
+        },
+        {
+          "client_id": "650675477770-tmee308mftgspscc1koh9r5sdal4s9m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6fbSCNLVuJjFa9wvJ0LauNsx9iATXOtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650675477770-tmee308mftgspscc1koh9r5sdal4s9m3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

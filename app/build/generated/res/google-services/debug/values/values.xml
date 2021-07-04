@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">650675477770-tmee308mftgspscc1koh9r5sdal4s9m3.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">650675477770</string>
+    <string name="google_api_key" translatable="false">AIzaSyC6fbSCNLVuJjFa9wvJ0LauNsx9iATXOtY</string>
+    <string name="google_app_id" translatable="false">1:650675477770:android:6aa5ae0547b6a6fb012ef3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC6fbSCNLVuJjFa9wvJ0LauNsx9iATXOtY</string>
+    <string name="google_storage_bucket" translatable="false">swiftgas-65014.appspot.com</string>
+    <string name="project_id" translatable="false">swiftgas-65014</string>
+</resources>

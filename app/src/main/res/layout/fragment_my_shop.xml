@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorWhite"
+    tools:context="com.gas.swiftel.Fragments.MyShopFragment">
+
+    <!-- TODO:s Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/ShopName"
+        android:layout_width="wrap_content"
+        android:text="Shop name."
+        android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp" />
+
+
+    <TextView
+        android:id="@+id/ShopNo"
+        android:text="Shop No"
+        android:textSize="16dp"
+        android:textColor="@color/ColorGrey"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/ShopName"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+         />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Add Gas"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"
+        android:drawableTop="@drawable/add_gas"
+        android:layout_alignParentRight="true"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/Tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ShopNo"
+        app:tabSelectedTextColor="@color/colorSecondary"
+        app:tabTextColor="#808080">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Gas_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:icon="@drawable/gascylinder"
+            android:text="Gas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Accesories_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:icon="@drawable/stove"
+            android:text="Accesories" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_below="@id/Tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Add_Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_icon="@drawable/add_gas"
+        app:fab_colorNormal="@color/ColorWhite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        app:fab_title="Add Gas"
+        app:fab_colorPressed="@color/colorSecondary"
+        app:fabSize="normal"
+        android:layout_marginRight="5dp"/>
+
+
+
+
+    <!--    <android.support.v4.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/SwipeToRefresh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    </android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        app:fab_addButtonColorPressed="@color/ColorWhite"
+        app:fab_addButtonColorNormal="@color/colorBlack"
+        app:fab_addButtonPlusIconColor="@color/ColorWhite"
+        app:fab_labelStyle="@style/custom_fab">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_action1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorBlack"
+            app:fab_size="mini"
+            app:fab_title=" Add gas "
+            />
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_action2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorBlack"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/addproduct"
+            app:fab_title=" Add accesories "
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

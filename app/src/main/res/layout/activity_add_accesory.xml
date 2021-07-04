@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddAccesoryActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/AddProductLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/LableBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/ic_arrow_back_black_24dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/LableAccessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Add Accessories"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/LAyoutImage"
+            android:orientation="vertical"
+            android:layout_below="@id/LableAccessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/LableAccessories"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/additem" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Image"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/item_txt1"
+                    android:layout_width="wrap_content"
+                    app:fab_icon="@drawable/ic_add_a_photo"
+                    app:fab_size="mini"
+                    android:layout_gravity="center_horizontal"
+                    app:fab_colorNormal="@color/colorBlack"
+                    app:fab_colorPressed="@color/colorSecondary"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <EditText
+            android:id="@+id/item_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LAyoutImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:hint="Item name"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/item_desc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:hint="Item description "
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/itemPlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_desc"
+            android:layout_centerHorizontal="true"
+            android:text="Item price"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/item_price"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemPlabel"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:hint="Item price"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/BtnAdd_Item"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_price"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/roundbtn_black"
+            android:text="Add product"
+            android:textAllCaps="false"
+            android:textColor="@color/ColorWhite"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Payhist_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_close"
+                android:drawableTint="@color/colorSecondary"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"/>
+
+
+            <TextView
+                android:id="@+id/payhist23"
+                android:text="Payment Receipt"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/Lin32"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/payhist23"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/vendorlogoo"/>
+
+
+
+                    <TextView
+                        android:id="@+id/payhistName"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="Payment Confirmed"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/payhistType"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text=""
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/payhistUser"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text=" "
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:id="@+id/payhistPhone"
+                        android:layout_width="wrap_content"
+                        android:text="0789606-60"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/payhistID"
+                        android:layout_width="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:id="@+id/payhistTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:text="20/12/2020"
+                         />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/VLin"
+                android:layout_width="380dp"
+                android:layout_height="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/Lin32"
+                android:background="#808080"/>
+
+
+            <LinearLayout
+                android:id="@+id/L112"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/VLin"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/payhistTrips222"
+                        android:text="Trips   "
+                        android:textSize="19dp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/payhistCash222"
+                        android:layout_width="wrap_content"
+                        android:text="Total amount"
+                        android:textSize="19dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp">
+
+                    <TextView
+                        android:id="@+id/payhistTrips"
+                        android:layout_gravity="end"
+                        android:text="200"
+                        android:textSize="17dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         />
+
+                    <TextView
+                        android:id="@+id/payhistCash"
+                        android:layout_width="wrap_content"
+                        android:text="200"
+                        android:textSize="17dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                         />
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:layout_below="@id/L112"
+                android:layout_height="wrap_content">
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/payhistDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorPressed="@color/ColorGrey"
+                    app:fab_colorNormal="@color/ColorWhite"
+                    app:fab_icon="@drawable/ic_delete"
+                    app:fab_size="mini"/>
+
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/payhistPrint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorPressed="@color/ColorGrey"
+                    app:fab_colorNormal="@color/ColorWhite"
+                    app:fab_icon="@drawable/ic_print"
+                    app:fab_size="mini"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.cardview.widget.CardView>

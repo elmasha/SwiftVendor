@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/SlideImage"
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/Slide_Heading"
+        android:layout_below="@id/SlideImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kibaba gas"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+    <TextView
+        android:id="@+id/Slide_Desc"
+        android:layout_width="350dp"
+        android:layout_marginTop="9dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Slide_Heading"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/ColorGrey"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip"
+        android:textAlignment="center"
+        />
+</RelativeLayout>

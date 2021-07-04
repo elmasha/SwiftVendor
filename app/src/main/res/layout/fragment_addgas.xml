@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Fragments.AddgasFragment">
+
+    <RelativeLayout
+        android:id="@+id/AddProductLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/additem"/>
+
+
+        <EditText
+            android:id="@+id/item_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_image"
+            android:hint="Item name"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <EditText
+            android:id="@+id/item_desc"
+            android:layout_width="300dp"
+            android:layout_below="@id/item_name"
+            android:layout_height="wrap_content"
+            android:hint="Item description "
+            android:layout_centerHorizontal="true"/>
+
+
+        <EditText
+            android:id="@+id/item_price"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_desc"
+            android:hint="Item price"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/BtnAdd_Item"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_price"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:background="@drawable/roundbtn_black"
+            android:textColor="@color/ColorWhite"
+            android:text="Add product"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TextHeaderVendors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okoa Gas"
+        android:textSize="22dp"
+        android:textColor="@color/colorSecondary"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/TextVendors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okoa gas has Additional charges "
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:layout_below="@id/TextHeaderVendors"
+        />
+
+
+    <TextView
+        android:id="@+id/Okoa_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Buy "
+        android:layout_marginStart="50dp"
+        android:background="@drawable/circle_border"
+        android:layout_below="@+id/TextVendors"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp" />
+
+
+    <TextView
+        android:id="@+id/Okoa_Refill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refill"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/grey_border"
+        android:layout_below="@+id/Okoa_buy"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp" />
+
+
+    <TextView
+        android:id="@+id/Okoa_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00.0"
+        android:textColor="@color/colorSecondary"
+        android:layout_below="@+id/TextVendors"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+       />
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Okoa_Refill"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        android:id="@+id/Spin_kitPayment"/>
+
+
+    <Button
+        android:id="@+id/Okoa_Request"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Okoa_Refill"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm Request"
+        android:textAllCaps="false"
+        android:layout_margin="15dp"
+        android:background="@drawable/roundbtn_black"
+        android:textColor="@color/ColorWhite"/>
+
+</RelativeLayout>

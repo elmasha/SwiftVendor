@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:elevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/Citem_Image"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="170dp"
+             />
+
+        <TextView
+            android:id="@+id/Citem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Citem_Image"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="item Title"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/Citem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Citem_Image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:text="Price"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/Citem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Citem_price"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            android:text="12/12/2020"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/Citem_desc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Citem_name"
+            android:text="black color"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Edit_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorPressed="@color/ColorGrey"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Citem_Image"
+            app:fab_colorNormal="@color/ColorWhite"
+            app:fab_icon="@drawable/ic_edit"
+            app:fab_size="mini"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

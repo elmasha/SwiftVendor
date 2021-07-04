@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Activity.AddItemsActivity">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/Rq13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/LABELgas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Product"
+                    android:layout_marginTop="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="23dp"
+                    android:textColor="@color/colorSecondary"
+                    android:textStyle="bold"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TAdd_gas"
+                    android:layout_width="150dp"
+                    android:layout_below="@id/LABELgas"
+                    android:layout_marginStart="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/IMGaddGas"
+                            android:layout_width="120dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/addgas1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="120dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/IMGaddGas"
+                            android:layout_height="wrap_content"
+                            android:text="Add Gas"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/colorSecondary"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/LableBack123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_icon="@drawable/ic_arrow_back_black_24dp"
+                    app:fab_colorNormal="@color/colorSecondary"
+                    android:layout_below="@id/TAdd_gas"
+                    app:fab_colorPressed="@color/ColorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="15dp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TAdd_accessories"
+                    android:layout_width="150dp"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/LABELgas"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/IMGaddAccess"
+                            android:layout_width="120dp"
+                            android:src="@drawable/access"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="120dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/IMGaddAccess"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:textAlignment="center"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/colorSecondary"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="Add Accessories"
+                            android:gravity="center_horizontal" />
+
+
+                    </RelativeLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

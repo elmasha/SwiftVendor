@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Activity.SplashActivity">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/Splashlogo"
+        android:layout_width="296dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/vendorlogo"
+        android:layout_height="295dp"/>
+
+
+    <TextView
+        android:id="@+id/SPlashTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChapChap gas"
+        android:textSize="24dp"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Splashlogo"/>
+
+
+
+</RelativeLayout>

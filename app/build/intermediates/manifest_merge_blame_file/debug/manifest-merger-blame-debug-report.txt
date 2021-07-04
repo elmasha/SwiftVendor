@@ -1,0 +1,422 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.gas.swiftel"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml
+10    <!--
+11     The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:10:5-79
+15-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:10:22-76
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:11:5-79
+16-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:12:5-77
+17-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:12:22-74
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:13:5-81
+18-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:13:22-78
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:14:5-67
+19-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:14:22-64
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:15:5-80
+20-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:15:22-77
+21    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+21-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:16:5-85
+21-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:16:22-82
+22    <uses-permission android:name="android.permission.CALL_PHONE" />
+22-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:17:5-69
+22-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:17:22-66
+23    <uses-permission android:name="android.permission.READ_CONTACTS" />
+23-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:18:5-72
+23-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:18:22-69
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\d125cf6233f4b8d7799db5d1c95413b9\jetified-firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:24:5-68
+24-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\d125cf6233f4b8d7799db5d1c95413b9\jetified-firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:24:22-65
+25    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+25-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:26:5-110
+25-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:26:22-107
+26
+27    <uses-feature
+27-->[com.google.android.gms:play-services-maps:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\80916462ddf0a3e863f397942ca86250\jetified-play-services-maps-15.0.0\AndroidManifest.xml:26:5-28:35
+28        android:glEsVersion="0x00020000"
+28-->[com.google.android.gms:play-services-maps:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\80916462ddf0a3e863f397942ca86250\jetified-play-services-maps-15.0.0\AndroidManifest.xml:27:9-41
+29        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+29-->[com.google.android.gms:play-services-maps:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\80916462ddf0a3e863f397942ca86250\jetified-play-services-maps-15.0.0\AndroidManifest.xml:28:9-32
+30    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+30-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:26:5-82
+30-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:26:22-79
+31
+32    <permission
+32-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:28:5-30:47
+33        android:name="com.gas.swiftel.permission.C2D_MESSAGE"
+33-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:29:9-63
+34        android:protectionLevel="signature" />
+34-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:30:9-44
+35
+36    <uses-permission android:name="com.gas.swiftel.permission.C2D_MESSAGE" />
+36-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:32:5-79
+36-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:32:22-76
+37
+38    <application
+38-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:20:5-111:19
+39        android:name="androidx.multidex.MultiDexApplication"
+39-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:21:9-61
+40        android:allowBackup="true"
+40-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:22:9-35
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.1.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\133bfa70fb8daee8ee4bd7dd48b6bb5e\core-1.1.0\AndroidManifest.xml:24:18-86
+42        android:debuggable="true"
+43        android:icon="@mipmap/vendorlogo"
+43-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:23:9-42
+44        android:label="@string/app_name"
+44-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:24:9-41
+45        android:roundIcon="@mipmap/vendorlogo"
+45-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:25:9-47
+46        android:supportsRtl="true"
+46-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:26:9-35
+47        android:theme="@style/AppTheme" >
+47-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:27:9-40
+48        <activity android:name="com.gas.swiftel.Activity.AddAccesoryActivity" />
+48-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:28:9-75
+48-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:28:19-63
+49        <activity android:name="com.gas.swiftel.Activity.AddGasActivity" />
+49-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:29:9-61
+49-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:29:19-58
+50        <activity android:name="com.gas.swiftel.Activity.ResetPassActivity" />
+50-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:30:9-64
+50-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:30:19-61
+51        <activity android:name="com.gas.swiftel.Activity.PrivacyActivity" />
+51-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:31:9-62
+51-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:31:19-59
+52        <activity android:name="com.gas.swiftel.Activity.SplashActivity" >
+52-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:32:9-38:20
+52-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:32:19-58
+53            <intent-filter>
+53-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:33:13-37:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:34:17-69
+54-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:34:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:36:17-77
+56-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:36:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity android:name="com.gas.swiftel.Activity.AddItemsActivity" />
+59-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:39:9-63
+59-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:39:19-60
+60        <activity android:name="com.gas.swiftel.Activity.CustomerNotifyActivity" />
+60-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:40:9-69
+60-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:40:19-66
+61        <!--
+62             The API key for Google Maps-based APIs is defined as a string resource.
+63             (See the file "res/values/google_maps_api.xml").
+64             Note that the API key is linked to the encryption key used to sign the APK.
+65             You need a different API key for each encryption key, including the release key that is used to
+66             sign the APK for publishing.
+67             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+68        -->
+69        <meta-data
+69-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:49:9-51:47
+70            android:name="com.google.android.geo.API_KEY"
+70-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:50:13-58
+71            android:value="@string/Api_key" />
+71-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:51:13-44
+72        <!--
+73 Set custom default icon. This is used when no icon is set for incoming notification messages.
+74     See README(https://goo.gl/l4GJaQ) for more.
+75        -->
+76        <meta-data
+76-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:56:9-58:55
+77            android:name="com.google.firebase.messaging.default_notification_icon"
+77-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:57:13-83
+78            android:resource="@drawable/vendorlogo" />
+78-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:58:13-52
+79        <!--
+80 Set color used with incoming notification messages. This is used when no color is set for the incoming
+81             notification message. See README(https://goo.gl/6BKBk7) for more.
+82        -->
+83        <meta-data
+83-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:63:9-65:54
+84            android:name="com.google.firebase.messaging.default_notification_color"
+84-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:64:13-84
+85            android:resource="@color/colorPrimary" />
+85-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:65:13-51
+86
+87        <activity
+87-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:67:9-69:61
+88            android:name="com.gas.swiftel.Activity.MapsVActivity"
+88-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:68:13-51
+89            android:label="@string/title_activity_maps_v" />
+89-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:69:13-58
+90        <activity android:name="com.gas.swiftel.Activity.WalkthroughActivity" />
+90-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:70:9-66
+90-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:70:19-63
+91        <activity android:name="com.gas.swiftel.Activity.PaymentHistActivity" />
+91-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:71:9-66
+91-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:71:19-63
+92        <activity
+92-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:72:9-80:20
+93            android:name="com.gas.swiftel.Activity.VendorMapActivity"
+93-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:73:13-55
+94            android:label="@string/title_activity_vendor_map" >
+94-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:74:13-62
+95            <intent-filter>
+95-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:75:13-79:29
+96                <action android:name="com.gas.chapel.TARGETNOTIFICATIONS" />
+96-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:76:17-77
+96-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:76:25-74
+97
+98                <category android:name="android.intent.category.DEFAULT" />
+98-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:78:17-76
+98-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:78:27-73
+99            </intent-filter>
+100        </activity>
+101
+102        <uses-library
+102-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:82:9-84:40
+103            android:name="org.apache.http.legacy"
+103-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:83:13-50
+104            android:required="false" />
+104-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:84:13-37
+105
+106        <activity
+106-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:86:9-88:60
+107            android:name="com.gas.swiftel.Activity.Home_Activity"
+107-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:87:13-51
+108            android:label="@string/title_activity_home_" />
+108-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:88:13-57
+109        <activity android:name="com.gas.swiftel.Activity.LoginActivity" />
+109-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:89:9-60
+109-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:89:19-57
+110        <activity android:name="com.gas.swiftel.Activity.VendorRegActivity" />
+110-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:90:9-64
+110-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:90:19-61
+111        <activity
+111-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:91:9-93:59
+112            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+112-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:92:13-76
+113            android:theme="@style/Base.Theme.AppCompat" />
+113-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:93:13-56
+114
+115        <service
+115-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:95:9-101:19
+116            android:name="com.gas.swiftel.Service.MyFirebaseInstanceServices"
+116-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:96:13-63
+117            android:exported="false" >
+117-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:97:13-37
+118            <intent-filter>
+118-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:98:13-100:29
+119                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+119-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:99:17-78
+119-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:99:25-75
+120            </intent-filter>
+121        </service>
+122        <service android:name="com.gas.swiftel.Service.MyFirebaseIdService" >
+122-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:102:9-106:19
+122-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:102:18-61
+123            <intent-filter>
+123-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:103:13-105:29
+124                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+124-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:104:17-80
+124-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:104:25-77
+125            </intent-filter>
+126        </service>
+127
+128        <meta-data
+128-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:108:9-110:71
+129            android:name="com.google.firebase.messaging.default_notification_channel_id"
+129-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:109:13-89
+130            android:value="@string/default_notification_channel_id" />
+130-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:110:13-68
+131
+132        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+132-->[com.google.firebase:firebase-firestore:17.0.2] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\014ba8f546a883190e1bd5f14c612f81\jetified-firebase-firestore-17.0.2\AndroidManifest.xml:11:9-15:19
+132-->[com.google.firebase:firebase-firestore:17.0.2] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\014ba8f546a883190e1bd5f14c612f81\jetified-firebase-firestore-17.0.2\AndroidManifest.xml:11:18-89
+133            <meta-data
+133-->[com.google.firebase:firebase-firestore:17.0.2] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\014ba8f546a883190e1bd5f14c612f81\jetified-firebase-firestore-17.0.2\AndroidManifest.xml:12:13-14:85
+134                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+134-->[com.google.firebase:firebase-firestore:17.0.2] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\014ba8f546a883190e1bd5f14c612f81\jetified-firebase-firestore-17.0.2\AndroidManifest.xml:13:17-111
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-firestore:17.0.2] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\014ba8f546a883190e1bd5f14c612f81\jetified-firebase-firestore-17.0.2\AndroidManifest.xml:14:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\d125cf6233f4b8d7799db5d1c95413b9\jetified-firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:28:13-30:85
+137                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+137-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\d125cf6233f4b8d7799db5d1c95413b9\jetified-firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:29:17-139
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\d125cf6233f4b8d7799db5d1c95413b9\jetified-firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:30:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:36:13-38:85
+140                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+140-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:37:17-96
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:38:17-82
+142        </service>
+143        <!--
+144             FirebaseMessagingService performs security checks at runtime,
+145             no need for explicit permissions despite exported="true"
+146        -->
+147        <service
+147-->[com.google.firebase:firebase-messaging:17.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\581f4b3255a817a72e1d48f924bf39c2\jetified-firebase-messaging-17.0.0\AndroidManifest.xml:28:9-34:19
+148            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+148-->[com.google.firebase:firebase-messaging:17.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\581f4b3255a817a72e1d48f924bf39c2\jetified-firebase-messaging-17.0.0\AndroidManifest.xml:29:13-82
+149            android:exported="true" >
+149-->[com.google.firebase:firebase-messaging:17.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\581f4b3255a817a72e1d48f924bf39c2\jetified-firebase-messaging-17.0.0\AndroidManifest.xml:30:13-36
+150            <intent-filter android:priority="-500" >
+150-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:98:13-100:29
+151                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+151-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:99:17-78
+151-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:99:25-75
+152            </intent-filter>
+153        </service>
+154
+155        <activity
+155-->[com.google.firebase:firebase-auth:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\f48de5b746d3c1d8482a1f4a60de4799\jetified-firebase-auth-15.0.0\AndroidManifest.xml:23:9-29:75
+156            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+156-->[com.google.firebase:firebase-auth:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\f48de5b746d3c1d8482a1f4a60de4799\jetified-firebase-auth-15.0.0\AndroidManifest.xml:24:13-85
+157            android:excludeFromRecents="true"
+157-->[com.google.firebase:firebase-auth:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\f48de5b746d3c1d8482a1f4a60de4799\jetified-firebase-auth-15.0.0\AndroidManifest.xml:25:13-46
+158            android:exported="true"
+158-->[com.google.firebase:firebase-auth:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\f48de5b746d3c1d8482a1f4a60de4799\jetified-firebase-auth-15.0.0\AndroidManifest.xml:26:13-36
+159            android:launchMode="singleInstance"
+159-->[com.google.firebase:firebase-auth:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\f48de5b746d3c1d8482a1f4a60de4799\jetified-firebase-auth-15.0.0\AndroidManifest.xml:27:13-48
+160            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+160-->[com.google.firebase:firebase-auth:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\f48de5b746d3c1d8482a1f4a60de4799\jetified-firebase-auth-15.0.0\AndroidManifest.xml:28:13-102
+161            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+161-->[com.google.firebase:firebase-auth:15.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\f48de5b746d3c1d8482a1f4a60de4799\jetified-firebase-auth-15.0.0\AndroidManifest.xml:29:13-72
+162
+163        <receiver
+163-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:29:9-33:20
+164            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+164-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:30:13-85
+165            android:enabled="true"
+165-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:31:13-35
+166            android:exported="false" >
+166-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:32:13-37
+167        </receiver>
+168        <receiver
+168-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:34:9-42:20
+169            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+169-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:35:13-100
+170            android:enabled="true"
+170-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:36:13-35
+171            android:exported="true"
+171-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:37:13-36
+172            android:permission="android.permission.INSTALL_PACKAGES" >
+172-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:38:13-69
+173            <intent-filter>
+173-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:39:13-41:29
+174                <action android:name="com.android.vending.INSTALL_REFERRER" />
+174-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:40:17-79
+174-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:40:25-76
+175            </intent-filter>
+176        </receiver>
+177
+178        <service
+178-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:44:9-47:40
+179            android:name="com.google.android.gms.measurement.AppMeasurementService"
+179-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:45:13-84
+180            android:enabled="true"
+180-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:46:13-35
+181            android:exported="false" />
+181-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:47:13-37
+182        <service
+182-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:48:9-52:72
+183            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+183-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:49:13-87
+184            android:enabled="true"
+184-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:50:13-35
+185            android:exported="false"
+185-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:51:13-37
+186            android:permission="android.permission.BIND_JOB_SERVICE" />
+186-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\9c367ce25f9a77a17219779b23226b26\jetified-firebase-analytics-16.0.3\AndroidManifest.xml:52:13-69
+187
+188        <receiver
+188-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:41:9-50:20
+189            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+189-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:42:13-78
+190            android:exported="true"
+190-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:43:13-36
+191            android:permission="com.google.android.c2dm.permission.SEND" >
+191-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:44:13-73
+192            <intent-filter>
+192-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:45:13-49:29
+193                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+193-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:46:17-81
+193-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:46:25-78
+194
+195                <category android:name="com.gas.swiftel" />
+195-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:48:17-61
+195-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:48:27-58
+196            </intent-filter>
+197        </receiver>
+198        <!--
+199             FirebaseInstanceIdService performs security checks at runtime,
+200             no need for explicit permissions despite exported="true"
+201        -->
+202        <service
+202-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:56:9-62:19
+203            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+203-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:57:13-77
+204            android:exported="true" >
+204-->[com.google.firebase:firebase-iid:16.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\46413a244e0d8a74156b7ce98addf660\jetified-firebase-iid-16.0.0\AndroidManifest.xml:58:13-36
+205            <intent-filter android:priority="-500" >
+205-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:103:13-105:29
+206                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+206-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:104:17-80
+206-->C:\Users\elmasha\AndroidStudioProjects\SwiftVendor\app\src\main\AndroidManifest.xml:104:25-77
+207            </intent-filter>
+208        </service>
+209
+210        <provider
+210-->[com.google.firebase:firebase-common:16.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\27a5b250527342bd796de33de68681b6\jetified-firebase-common-16.0.1\AndroidManifest.xml:10:9-14:39
+211            android:name="com.google.firebase.provider.FirebaseInitProvider"
+211-->[com.google.firebase:firebase-common:16.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\27a5b250527342bd796de33de68681b6\jetified-firebase-common-16.0.1\AndroidManifest.xml:11:13-77
+212            android:authorities="com.gas.swiftel.firebaseinitprovider"
+212-->[com.google.firebase:firebase-common:16.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\27a5b250527342bd796de33de68681b6\jetified-firebase-common-16.0.1\AndroidManifest.xml:12:13-72
+213            android:exported="false"
+213-->[com.google.firebase:firebase-common:16.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\27a5b250527342bd796de33de68681b6\jetified-firebase-common-16.0.1\AndroidManifest.xml:13:13-37
+214            android:initOrder="100" />
+214-->[com.google.firebase:firebase-common:16.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\27a5b250527342bd796de33de68681b6\jetified-firebase-common-16.0.1\AndroidManifest.xml:14:13-36
+215
+216        <activity
+216-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\552d8c02409d9aa40de99b57db6a1eee\jetified-play-services-base-15.0.1\AndroidManifest.xml:23:9-26:75
+217            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+217-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\552d8c02409d9aa40de99b57db6a1eee\jetified-play-services-base-15.0.1\AndroidManifest.xml:24:13-79
+218            android:exported="false"
+218-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\552d8c02409d9aa40de99b57db6a1eee\jetified-play-services-base-15.0.1\AndroidManifest.xml:25:13-37
+219            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+219-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\552d8c02409d9aa40de99b57db6a1eee\jetified-play-services-base-15.0.1\AndroidManifest.xml:26:13-72
+220
+221        <meta-data
+221-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\aa494ba90f1d97d9615fa4de807589e2\jetified-play-services-basement-15.0.1\AndroidManifest.xml:23:9-25:69
+222            android:name="com.google.android.gms.version"
+222-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\aa494ba90f1d97d9615fa4de807589e2\jetified-play-services-basement-15.0.1\AndroidManifest.xml:24:13-58
+223            android:value="@integer/google_play_services_version" />
+223-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\aa494ba90f1d97d9615fa4de807589e2\jetified-play-services-basement-15.0.1\AndroidManifest.xml:25:13-66
+224
+225        <provider
+225-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\05c2f6716eb4abc5dd7530cd4acf4087\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+226            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+226-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\05c2f6716eb4abc5dd7530cd4acf4087\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+227            android:authorities="com.gas.swiftel.lifecycle-process"
+227-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\05c2f6716eb4abc5dd7530cd4acf4087\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+228            android:exported="false"
+228-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\05c2f6716eb4abc5dd7530cd4acf4087\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+229            android:multiprocess="true" />
+229-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\elmasha\.gradle\caches\transforms-2\files-2.1\05c2f6716eb4abc5dd7530cd4acf4087\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+230    </application>
+231
+232</manifest>

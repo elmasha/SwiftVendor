@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/ColorWhite"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Fragments.VendorProfileFragment">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@drawable/bg_profile"
+                ></RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/Linear89"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Vendor_profileImage"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="15dp"
+                    app:civ_border_color="@color/colorSecondary"
+                    app:civ_border_width="3dp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    >
+
+
+
+                    <TextView
+                        android:id="@+id/Phonev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Emailv"
+                        android:text="0722327290"
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        android:textColor="@color/ColorGrey"
+                        android:layout_marginStart="20dp"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawableTint="#808080"
+                        android:layout_marginLeft="20dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ratingBar_layout"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Vendor_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Vendor_profileImage"
+                        android:text="Elmasha Omondi  "
+                        android:textStyle="bold"
+                        android:drawableTint="@color/ColorLighrGrey"
+                        android:textSize="15sp"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:textColor="@color/ColorLighrGrey"
+                        android:layout_centerHorizontal="true" />
+
+
+                    <TextView
+                        android:id="@+id/Emailv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Elmasha@gmail.com"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/ColorLighrGrey"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawableTint="@color/ColorLighrGrey"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="1"
+
+                            android:layout_marginTop="8dp"
+                            android:stepSize="0"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/Phonev"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/Avg_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 1.0 "
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:background="@drawable/black_bg"
+                            android:textColor="@color/colorSecondary"
+                            android:layout_marginLeft="8dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--- Card  tabs holder-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/My_tab"
+                android:layout_width="match_parent"
+                android:layout_below="@id/Linear89"
+                android:layout_margin="0dp"
+                app:cardCornerRadius="14dp"
+                android:background="@color/ColorWhite"
+                android:layout_height="match_parent">
+
+                <!--- Card  tabs viewer-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/Close_open_layout"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Close_payTab"
+                            android:layout_width="match_parent"
+                            android:drawableBottom="@drawable/open"
+                            android:text="Close"
+                            android:visibility="gone"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/R_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/Tabs"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="0dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="8dp"
+                                android:layout_height="wrap_content">
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/Myshop"
+                                    android:layout_width="wrap_content"
+                                    app:fab_colorNormal="@color/ColorWhite"
+                                    app:fab_icon="@drawable/my_shop"
+                                    app:fab_colorPressed="@color/colorBlack"
+                                    app:fab_stroke_visible="true"
+                                    app:fab_size="mini"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:text="My Shop"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="8dp"
+                                android:layout_height="wrap_content">
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/My_payment"
+                                    android:layout_width="wrap_content"
+                                    app:fab_colorNormal="@color/ColorWhite"
+                                    app:fab_icon="@drawable/my_payment"
+                                    app:fab_colorPressed="@color/colorBlack"
+                                    app:fab_stroke_visible="true"
+                                    app:fab_size="mini"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:text="Payments"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="8dp"
+                                android:layout_height="wrap_content">
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/edit_account"
+                                    android:layout_width="wrap_content"
+                                    app:fab_colorNormal="@color/ColorWhite"
+                                    app:fab_icon="@drawable/edit_profile"
+                                    app:fab_colorPressed="@color/colorBlack"
+                                    app:fab_stroke_visible="true"
+                                    app:fab_size="mini"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:text="Edit profile"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="8dp"
+                                android:gravity="end"
+                                android:layout_height="wrap_content">
+
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/more"
+                                    android:layout_width="wrap_content"
+                                    app:fab_colorNormal="@color/ColorWhite"
+                                    app:fab_icon="@drawable/more"
+                                    app:fab_colorPressed="@color/colorBlack"
+                                    app:fab_stroke_visible="true"
+                                    app:fab_size="mini"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:text="More"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/FrameProfileLayout"
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/Tabs"
+                            android:layout_height="match_parent"/>
+
+
+
+                       </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+<!--            end cardView-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

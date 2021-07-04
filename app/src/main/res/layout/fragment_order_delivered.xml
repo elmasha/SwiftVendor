@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Fragments.OrderDeliveredFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeDeliver"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerviewDelivered"
+        android:padding="3dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/ColorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    <ImageView
+        android:id="@+id/View_Error"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/SwipeDeliver"
+        android:src="@drawable/error"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

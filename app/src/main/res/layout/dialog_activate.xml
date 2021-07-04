@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/LablePay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Activation fee"
+                android:layout_marginTop="17dp"
+                android:textSize="22dp"
+                android:textColor="@color/colorSecondary"
+                android:textStyle="bold"/>
+
+
+
+            <TextView
+                android:id="@+id/LablePay2"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LablePay"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="Deposit 20 an Commitment fee from "
+                />
+
+            <TextView
+                android:id="@+id/LablePayTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LablePay2"
+                android:layout_margin="12dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/LablePayTime"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/Cancel_pay"
+                    android:layout_width="120dp"
+                    android:background="@drawable/secondary_borderr"
+                    android:textColor="@color/colorSecondary"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:text="Cancel"
+                    android:layout_below="@id/LablePay2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp" />
+
+
+                <Button
+                    android:id="@+id/Confirm_pay"
+                    android:layout_width="120dp"
+                    android:background="@drawable/roundbtn_black"
+                    android:textColor="@color/colorSecondary"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:text="Pay now"
+                    android:layout_below="@id/LablePay2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp" />
+
+            </LinearLayout>
+
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progress_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/LablePay2"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.cardview.widget.CardView>

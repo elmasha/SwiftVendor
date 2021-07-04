@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:elevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/Card_Image"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+             />
+
+        <TextView
+            android:id="@+id/Card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Card_Image"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:text="Gas Title"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/Card_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Card_name"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:text="Price 10000"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Card_refillprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Card_price"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="05dp"
+            android:text="Refill Price"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Edit_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorPressed="@color/ColorGrey"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Card_refillprice"
+            app:fab_colorNormal="@color/ColorWhite"
+            app:fab_icon="@drawable/ic_edit"
+            app:fab_size="mini"/>
+
+
+
+
+        <TextView
+            android:id="@+id/Card_kgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Card_Image"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="100dp"
+            android:text="Gas Kgs"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

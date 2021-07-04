@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Fragments.More">
+
+    <RelativeLayout
+        android:id="@+id/My_moreTab"
+        android:layout_below="@id/Tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/text_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More options"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <!--- More -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_below="@id/text_more"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/Privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Privacy and Policy"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/privacypolicy"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/About"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  About this app"
+                android:layout_below="@id/Privacy"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/about"
+                />
+
+
+            <TextView
+                android:id="@+id/Feedback2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=" Send Feedback"
+                android:textColor="@color/colorBlack"
+                android:drawableLeft="@drawable/feedbb"
+                android:layout_below="@id/About"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp" />
+
+
+
+            <TextView
+                android:id="@+id/Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Share app"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:drawableLeft="@drawable/share"
+                android:layout_below="@id/Feedback2"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/LogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Share"
+                android:text="  Log out "
+                android:layout_marginBottom="20dp"
+                android:drawableTint="@color/ColorRed"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/logout"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

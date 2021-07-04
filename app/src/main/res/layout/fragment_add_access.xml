@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Fragments.AddAccessFragment">
+
+    <RelativeLayout
+        android:id="@+id/AddGasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="12dp">
+
+
+        <ImageView
+            android:id="@+id/Gas_image"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/additem"/>
+
+
+        <EditText
+            android:id="@+id/gas_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Gas_image"
+            android:hint="Enter gas name "
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <EditText
+            android:id="@+id/gas_desc"
+            android:layout_width="300dp"
+            android:layout_below="@id/gas_name"
+            android:layout_height="wrap_content"
+            android:hint="Gas description "
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/gas_price"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gas_desc"
+            android:hint="Gas purchase price per unit "
+            android:inputType="number"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/gas_refill"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gas_price"
+            android:hint="Gas refill price per unit "
+            android:inputType="number"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Spinner
+            android:id="@+id/gas_kgs"
+            android:layout_width="300dp"
+            android:layout_height="28dp"
+            android:layout_below="@id/gas_refill"
+            android:entries="@array/gas_kgs"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+            android:id="@+id/Add_Gas"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gas_kgs"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:background="@drawable/roundbtn_black"
+            android:textColor="@color/ColorWhite"
+            android:text="Upload Gas"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cont"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <fragment
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            tools:context="com.gas.swiftel.Activity.VendorMapActivity"
+            android:layout_height="match_parent"
+             />
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ReFresh2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_gps"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="300dp"
+            android:layout_marginStart="8dp"
+            app:fab_colorNormal="@color/ColorWhite"
+            map:fab_size="mini"
+            app:fab_colorPressed="@color/colorSecondary"
+            android:layout_marginLeft="8dp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="5dp"
+        android:elevation="8dp"
+        map:cardCornerRadius="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/R1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/LinearView23"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="From: "
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="23dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp" />
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/MClient_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Cash on delivery"
+                    android:textSize="15dp"
+                    android:src="@drawable/profile"
+                    android:textColor="@color/colorSecondary"
+                    />
+
+
+                <TextView
+                    android:id="@+id/Client_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading.."
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="16dp"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/back_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorSecondary"
+                android:textAlignment="center"
+                android:drawableTint="@color/colorSecondary"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/ic_navigate_before"
+                android:gravity="center_horizontal" />
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/LinearView23"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/gasItemLayout"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/OrdCard_Image"
+                        android:layout_width="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/Mitem_name"
+                            android:layout_width="wrap_content"
+                            android:text="Loading"
+                            android:layout_marginStart="8dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+
+                        <TextView
+                            android:id="@+id/Mitem_kg"
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/Mitem_name"
+                            android:layout_marginStart="8dp"
+                            android:text="0kg"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+
+
+                        <TextView
+                            android:id="@+id/Mitem_price"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_below="@id/Mitem_kg"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:text="......."
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+
+                        <TextView
+                            android:id="@+id/Mitem_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_below="@id/Mitem_kg"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:text=""
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorSecondary"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+
+                        <TextView
+                            android:id="@+id/Mitem_qty"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_below="@id/Mitem_kg"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:text="Qty"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorSecondary"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp" />
+
+                        <TextView
+                            android:id="@+id/Mitem_time"
+                            android:layout_below="@id/Mitem_price"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text=" 12 mins"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:drawableLeft="@drawable/timesc"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/btnNavigation"
+                    android:layout_width="200dp"
+                    android:background="@drawable/roundbtn_black"
+                    android:layout_height="wrap_content"
+                    android:text="Start navigation"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorSecondary"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@id/gasItemLayout"
+                    android:layout_centerHorizontal="true" />
+
+
+                <Button
+                    android:id="@+id/Confirm_reqeust"
+                    android:layout_width="130dp"
+                    android:background="@drawable/borderstyle"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Order"
+                    android:visibility="invisible"
+                    android:textColor="@color/ColorWhite"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@id/gasItemLayout"
+                    android:layout_marginLeft="15dp" />
+
+
+                <Button
+                    android:id="@+id/Cancel_reqeust"
+                    android:layout_width="130dp"
+                    android:background="@drawable/roundbtn_black"
+                    android:layout_height="wrap_content"
+                    android:text="Reject Order"
+                    android:visibility="invisible"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSecondary"
+                    android:layout_below="@+id/gasItemLayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true" />
+
+
+
+
+                <Button
+                    android:id="@+id/On_delivered"
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Confirm delivered"
+                    android:visibility="gone"
+                    android:layout_below="@+id/gasItemLayout"
+                    android:textColor="@color/colorSecondary"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbtn_black"/>
+
+
+
+
+                <Button
+                    android:id="@+id/On_exchange"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Exchange cylinder"
+                    android:visibility="gone"
+                    android:layout_below="@+id/gasItemLayout"
+                    android:textColor="@color/colorSecondary"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbtn_black"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/Show_data"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Confirm Delivered"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/gasItemLayout"
+                    android:textColor="@color/colorSecondary"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="wrap_content">
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/Client_number"
+                        android:layout_width="wrap_content"
+                        app:fab_icon="@drawable/ic_phone_in_talk"
+                        android:layout_height="wrap_content"
+                        map:fab_size="mini"
+                        android:layout_gravity="center"
+                        app:fab_colorNormal="@color/ColorWhite"
+                        app:fab_colorPressed="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call Customer"
+                        android:textAlignment="center"
+                        android:drawableTint="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:elevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ctCard_Image"
+            android:layout_width="110dp"
+            android:layout_height="108dp"
+             />
+
+
+        <TextView
+            android:id="@+id/ctCard_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Gas Title"
+            android:layout_marginStart="130dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="130dp" />
+
+        <TextView
+            android:id="@+id/ctCard_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ctCard_name"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="0dp"
+            android:text="Price"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/ctCard_kgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:text="Gas Kgs"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <corners android:radius="14dp"></corners>
+    <solid android:color="@color/colorBlack"/>
+
+    <!--    <gradient-->
+    <!--        android:startColor="#242a37"-->
+    <!--        android:centerColor="#414B64"-->
+    <!--        android:endColor="#ABA6A6"/>-->
+
+
+    <padding android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp"/>
+
+</shape>

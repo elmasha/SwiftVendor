@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/IdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Gas  "
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_edit"
+            android:drawableTint="@color/colorSecondary"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorSecondary"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_below="@id/IdLabel"
+            android:id="@+id/Gas_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/additem"/>
+
+
+        <LinearLayout
+            android:layout_below="@id/Gas_image"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/gas_name"
+                android:hint="Enter gas name "
+                android:layout_width="230dp"
+                android:inputType="text"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+
+
+
+            <EditText
+                android:id="@+id/gas_desc"
+                android:hint="Gas description"
+                android:layout_width="230dp"
+                android:inputType="text"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+
+
+
+            <EditText
+                android:id="@+id/gas_price"
+                android:hint="Gas price per unit"
+                android:layout_width="230dp"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+
+
+
+            <EditText
+                android:id="@+id/gas_refill"
+                android:hint="Gas refill price per unit "
+                android:layout_width="230dp"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+
+
+            <Spinner
+                android:id="@+id/gas_kgs"
+                android:layout_width="300dp"
+                android:layout_height="28dp"
+                android:textAlignment="center"
+                android:entries="@array/gas_kgs"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/gas_kgs"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/delete_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_size="mini"
+                    android:layout_marginTop="8dp"
+                    app:fab_colorPressed="@color/ColorGrey"
+                    app:fab_icon="@drawable/ic_delete"
+                    app:fab_colorNormal="@color/ColorWhite"/>
+
+                <Button
+                    android:id="@+id/Add_Gas"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="8dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@drawable/roundbtn_black"
+                    android:textColor="@color/ColorWhite"
+                    android:text="Update gas"
+                    android:layout_marginLeft="8dp" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/GasView"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/IdLabel"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="12kg"
+            android:textColor="@color/colorSecondary"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/ColorWhite"
+    android:layout_height="match_parent"
+    tools:context="com.gas.swiftel.Fragments.MyShopFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Lable_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_add_cart"
+        android:drawableTint="@color/colorSecondary"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="19dp"
+        android:text="  Manage Orders" />
+
+
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TablayoutOrders"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabMode="scrollable"
+        android:layout_margin="8dp"
+        android:layout_below="@id/Lable_orders"
+        app:tabSelectedTextColor="@color/colorSecondary"
+        app:tabTextColor="#808080">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/pending_tab"
+            android:layout_width="match_parent"
+            android:icon="@drawable/ic_pemdig"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Pending" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/confirm_tab"
+            android:layout_width="match_parent"
+            android:icon="@drawable/ic_check"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Confirmed" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/transit_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_transit"
+            android:layout_margin="10dp"
+            android:text="In transit" />
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/delivered_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_delivered"
+            android:layout_margin="10dp"
+            android:text="Delivered" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/cancel_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_cancel_black"
+            android:layout_margin="10dp"
+            android:text="Canceled" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ViewPagerOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TablayoutOrders"
+        android:layout_marginTop="0dp" />
+
+
+
+
+</RelativeLayout>
