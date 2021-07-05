@@ -203,14 +203,15 @@ com/gas/swiftel/Activity/MapsVActivity.java
  com.gas.swiftel.Activity.MapsVActivity$2
  com.gas.swiftel.Activity.MapsVActivity$20
  com.gas.swiftel.Activity.MapsVActivity$21
- com.gas.swiftel.Activity.MapsVActivity$21$1
  com.gas.swiftel.Activity.MapsVActivity$22
  com.gas.swiftel.Activity.MapsVActivity$22$1
  com.gas.swiftel.Activity.MapsVActivity$23
+ com.gas.swiftel.Activity.MapsVActivity$23$1
  com.gas.swiftel.Activity.MapsVActivity$24
  com.gas.swiftel.Activity.MapsVActivity$25
  com.gas.swiftel.Activity.MapsVActivity$26
  com.gas.swiftel.Activity.MapsVActivity$27
+ com.gas.swiftel.Activity.MapsVActivity$28
  com.gas.swiftel.Activity.MapsVActivity$3
  com.gas.swiftel.Activity.MapsVActivity$4
  com.gas.swiftel.Activity.MapsVActivity$5

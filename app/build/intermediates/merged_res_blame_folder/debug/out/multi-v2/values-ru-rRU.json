@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-rRU\\values-ru-rRU.xml",
+            "outputFile": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-rRU\\values-ru-rRU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\elmasha\\.gradle\\caches\\transforms-2\\files-2.1\\f97533e62ac6a09b870b1c0ca6d52b7c\\jetified-android-image-cropper-2.6.0\\res\\values-ru-rRU\\values-ru-rRU.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-2\\files-2.1\\7c6a05c67ee80444559709231770790c\\jetified-android-image-cropper-2.6.0\\res\\values-ru-rRU\\values-ru-rRU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

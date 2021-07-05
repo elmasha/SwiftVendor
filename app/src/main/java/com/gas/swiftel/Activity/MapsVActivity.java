@@ -398,6 +398,24 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
             }
         });
 
+        relativeLayoutRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (shop_switch.isChecked()){
+
+                    LocationUpdates();
+                    Vendor_Location();
+
+                }else {
+
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"Shop Closed",Snackbar.LENGTH_LONG);
+                    snackbar.show();
+                }
+            }
+        });
+
+
+
 
         shop_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

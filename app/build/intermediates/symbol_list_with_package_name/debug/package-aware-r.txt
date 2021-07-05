@@ -1416,6 +1416,7 @@ id Add_Gas
 id Add_Item
 id Add_ItemFloat
 id Add_profile
+id AddgasLayout
 id Avg_rating
 id Back
 id BtnAdd_Item
