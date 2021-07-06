@@ -116,7 +116,7 @@ public class AddItemsActivity extends AppCompatActivity {
 //        r3 = findViewById(R.id.Rq13);
 //        backGas = findViewById(R.id.LableBack2);
 //        backAccess = findViewById(R.id.LableBack1);
-//        backToshop  = findViewById(R.id.LableBack123);
+        backToshop  = findViewById(R.id.LableBack123);
 //        AddAccessCamera = findViewById(R.id.item_txt1);
 //        AddGasCamera = findViewById(R.id.item_txt2);
 //        AddAccessCamera.setOnClickListener(new View.OnClickListener() {
@@ -141,16 +141,16 @@ public class AddItemsActivity extends AppCompatActivity {
 //                        .start(AddItemsActivity.this);
 //            }
 //        });
-//        backToshop.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                Intent toshop = new Intent(getApplicationContext(),Home_Activity.class);
-//                startActivity(toshop);
-//                finish();
-//                WinsdowState = 0;
-//            }
-//        });
+        backToshop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent toshop = new Intent(getApplicationContext(),MapsVActivity.class);
+                startActivity(toshop);
+                finish();
+                WinsdowState = 0;
+            }
+        });
 //        backGas.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -169,18 +169,22 @@ public class AddItemsActivity extends AppCompatActivity {
 //                WinsdowState = 0;
 //            }
 //        });
+
         toAddGas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),AddGasActivity.class));
             }
         });
+
         toAddPrd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
               startActivity(new Intent(getApplicationContext(),AddAccesoryActivity.class));
             }
         });
+
+
 //        itemImage.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

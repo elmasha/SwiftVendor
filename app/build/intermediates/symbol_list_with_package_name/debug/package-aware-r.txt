@@ -1499,15 +1499,16 @@ id L125
 id LABELgas
 id LAyoutImage
 id LableAccessories
-id LableBack1
+id LableBack12
 id LableBack123
-id LableBack2
+id LableBack22
 id LableGas
 id LablePay
 id LablePay2
 id LablePayTime
 id Lable_orders
 id LastName
+id LayoutAccessory
 id LayoutCylinder
 id LayoutImage
 id LayoutWalk
@@ -1595,6 +1596,7 @@ id PulseRing
 id R1
 id R_tabs
 id ReFresh2
+id RecyclerAccessory
 id RecyclerCylinder
 id RecyclerPayHist
 id RecyclerViewshop
@@ -1750,6 +1752,7 @@ id checked
 id chronometer
 id clip_horizontal
 id clip_vertical
+id closeAccess
 id closeCylinder
 id closeShopBtn
 id close_shop24
@@ -1844,6 +1847,7 @@ id inputFeedback
 id invisible
 id italic
 id itemPlabel
+id item_access
 id item_desc
 id item_image
 id item_name

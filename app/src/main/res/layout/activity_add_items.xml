@@ -29,6 +29,7 @@
                     android:id="@+id/AddgasLayout"
                     android:layout_width="match_parent"
                     android:orientation="vertical"
+                    android:layout_centerInParent="true"
                     android:layout_height="wrap_content">
 
                     <TextView
@@ -146,25 +147,30 @@
                     </androidx.cardview.widget.CardView>
 
 
+
+
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/LableBack123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_icon="@drawable/ic_arrow_back_black_24dp"
+                        app:fab_colorNormal="@color/colorSecondary"
+                        android:layout_below="@id/AddgasLayout"
+                        app:fab_colorPressed="@color/ColorWhite"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="15dp" />
+
                 </LinearLayout>
 
 
 
 
 
-                <com.getbase.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/LableBack123"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:fab_icon="@drawable/ic_arrow_back_black_24dp"
-                    app:fab_colorNormal="@color/colorSecondary"
-                    android:layout_below="@id/AddgasLayout"
-                    app:fab_colorPressed="@color/ColorWhite"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="100dp"
-                    android:layout_marginLeft="15dp" />
 
 
 

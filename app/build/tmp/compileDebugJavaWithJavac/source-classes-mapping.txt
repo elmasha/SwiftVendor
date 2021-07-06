@@ -46,14 +46,15 @@ com/gas/swiftel/Adapter/VendorAdapter.java
 com/gas/swiftel/Activity/AddGasActivity.java
  com.gas.swiftel.Activity.AddGasActivity
  com.gas.swiftel.Activity.AddGasActivity$1
+ com.gas.swiftel.Activity.AddGasActivity$10
  com.gas.swiftel.Activity.AddGasActivity$2
  com.gas.swiftel.Activity.AddGasActivity$3
  com.gas.swiftel.Activity.AddGasActivity$4
  com.gas.swiftel.Activity.AddGasActivity$5
  com.gas.swiftel.Activity.AddGasActivity$6
  com.gas.swiftel.Activity.AddGasActivity$7
- com.gas.swiftel.Activity.AddGasActivity$7$1
  com.gas.swiftel.Activity.AddGasActivity$8
+ com.gas.swiftel.Activity.AddGasActivity$8$1
  com.gas.swiftel.Activity.AddGasActivity$9
 com/gas/swiftel/Adapter/AccessoriesAdapter.java
  com.gas.swiftel.Adapter.AccessoriesAdapter
@@ -67,6 +68,11 @@ com/gas/swiftel/Interface/RetrofitInterface.java
  com.gas.swiftel.Interface.RetrofitInterface
 com/gas/swiftel/Model/StkQuey.java
  com.gas.swiftel.Model.StkQuey
+com/gas/swiftel/Adapter/AdminAccessAdapter.java
+ com.gas.swiftel.Adapter.AdminAccessAdapter
+ com.gas.swiftel.Adapter.AdminAccessAdapter$AccessViewHolder
+ com.gas.swiftel.Adapter.AdminAccessAdapter$AccessViewHolder$1
+ com.gas.swiftel.Adapter.AdminAccessAdapter$OnItemCickListener
 com/gas/swiftel/Model/Vendor_Arround.java
  com.gas.swiftel.Model.Vendor_Arround
 com/gas/swiftel/Activity/SplashActivity.java
@@ -187,6 +193,8 @@ com/gas/swiftel/Fragments/VendorProfileFragment.java
  com.gas.swiftel.Fragments.VendorProfileFragment$7
 com/gas/swiftel/Adapter/OrderPager.java
  com.gas.swiftel.Adapter.OrderPager
+com/gas/swiftel/Model/AccessModel.java
+ com.gas.swiftel.Model.AccessModel
 com/gas/swiftel/Activity/MapsVActivity.java
  com.gas.swiftel.Activity.MapsVActivity
  com.gas.swiftel.Activity.MapsVActivity$1
@@ -230,13 +238,14 @@ com/gas/swiftel/Activity/AddItemsActivity.java
  com.gas.swiftel.Activity.AddItemsActivity$1
  com.gas.swiftel.Activity.AddItemsActivity$2
  com.gas.swiftel.Activity.AddItemsActivity$3
- com.gas.swiftel.Activity.AddItemsActivity$3$1
- com.gas.swiftel.Activity.AddItemsActivity$3$2
  com.gas.swiftel.Activity.AddItemsActivity$4
+ com.gas.swiftel.Activity.AddItemsActivity$4$1
+ com.gas.swiftel.Activity.AddItemsActivity$4$2
  com.gas.swiftel.Activity.AddItemsActivity$5
  com.gas.swiftel.Activity.AddItemsActivity$6
- com.gas.swiftel.Activity.AddItemsActivity$6$1
  com.gas.swiftel.Activity.AddItemsActivity$7
+ com.gas.swiftel.Activity.AddItemsActivity$7$1
+ com.gas.swiftel.Activity.AddItemsActivity$8
 com/gas/swiftel/Model/Sender.java
  com.gas.swiftel.Model.Sender
 com/gas/swiftel/Model/Result.java
@@ -358,11 +367,17 @@ com/gas/swiftel/Model/ResponseStk.java
 com/gas/swiftel/Activity/AddAccesoryActivity.java
  com.gas.swiftel.Activity.AddAccesoryActivity
  com.gas.swiftel.Activity.AddAccesoryActivity$1
+ com.gas.swiftel.Activity.AddAccesoryActivity$10
  com.gas.swiftel.Activity.AddAccesoryActivity$2
  com.gas.swiftel.Activity.AddAccesoryActivity$3
- com.gas.swiftel.Activity.AddAccesoryActivity$3$1
- com.gas.swiftel.Activity.AddAccesoryActivity$3$2
  com.gas.swiftel.Activity.AddAccesoryActivity$4
+ com.gas.swiftel.Activity.AddAccesoryActivity$5
+ com.gas.swiftel.Activity.AddAccesoryActivity$6
+ com.gas.swiftel.Activity.AddAccesoryActivity$7
+ com.gas.swiftel.Activity.AddAccesoryActivity$8
+ com.gas.swiftel.Activity.AddAccesoryActivity$9
+ com.gas.swiftel.Activity.AddAccesoryActivity$9$1
+ com.gas.swiftel.Activity.AddAccesoryActivity$9$2
 com/gas/swiftel/Fragments/OrdersFragment.java
  com.gas.swiftel.Fragments.OrdersFragment
  com.gas.swiftel.Fragments.OrdersFragment$1

@@ -120,6 +120,16 @@ public class AddGasActivity extends AppCompatActivity {
         gasRefilprice = findViewById(R.id.gas_refill);
         gasKgs = findViewById(R.id.gas_kgs);
         submitGas = findViewById(R.id.Add_Gas);
+        backGas = findViewById(R.id.LableBack22);
+
+
+        backGas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),AddItemsActivity.class));
+            }
+        });
+
 
 
         close.setOnClickListener(new View.OnClickListener() {
@@ -218,7 +228,6 @@ public class AddGasActivity extends AppCompatActivity {
                             gasPrice.setText("");
                             gasRefilprice.setText("");
                             gasImage.setImageURI(null);
-                            gasImage.setBackgroundResource(R.drawable.additem);
 
 
 
@@ -318,7 +327,6 @@ public class AddGasActivity extends AppCompatActivity {
                                     gasPrice.setText("");
                                     gasRefilprice.setText("");
                                     gasImage.setImageURI(null);
-                                    gasImage.setBackgroundResource(R.drawable.additem);
 
 
 
