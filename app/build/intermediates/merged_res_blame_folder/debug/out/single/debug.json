@@ -1,630 +1,630 @@
 [
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_black_bg.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\black_bg.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_addgas.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_addgas.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_check.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_check.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_placeholder.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\placeholder.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\profile.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_gas.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_gas.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_myshop.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\myshop.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_close_shop.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\close_shop.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_errorimage.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\errorimage.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_permission.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\permission.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shippingdelivery.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\shippingdelivery.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_refresh.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_refresh.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\raw_popglass.mp3.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\raw\\popglass.mp3"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_add_gas.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_add_gas.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_feedack.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_feedack.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_placeholder.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\placeholder.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_pending_order.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_pending_order.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_more.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_more.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_access.jpg.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\access.jpg"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_feedback.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\feedback.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_okoagas_dialog.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\okoagas_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_my_shop.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\my_shop.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_blck_bg.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\blck_bg.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_gas.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_gas.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_my_payment.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\my_payment.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_location.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_location.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_black_border.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\circle_black_border.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_pemdig.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_pemdig.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_storee.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\storee.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_grey_border.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\grey_border.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vendor_reg.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_vendor_reg.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addphoto.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addphoto.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deposit.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\deposit.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_secondary_borderr.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\secondary_borderr.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_add_product.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_add_product.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_notification.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_notification.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbtn.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbtn.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_locationhome.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\locationhome.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_pending_order.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_pending_order.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_location.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_location.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_notification.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_notification.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_print.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_print.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\raw_mapstyle.json.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\raw\\mapstyle.json"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_confirmed.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_confirmed.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_border.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\circle_border.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_myshop.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_myshop.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_regshop.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\regshop.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_more.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_more.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_privacy.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_privacy.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_payment_histrow.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\payment_histrow.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\menu_navigation.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\menu\\navigation.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_queue.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_baseline_queue.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps_v.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_maps_v.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_about.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\about.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_my_shop.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_my_shop.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roubtnsec.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roubtnsec.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delivered.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_delivered.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vendor_map.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_vendor_map.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addproduct.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addproduct.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_add_image.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_add_image.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_pemdig.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_pemdig.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_close_shop.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_close_shop.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_my_shop.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_my_shop.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbg_black.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbg_black.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_gas_ror.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\gas_ror.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_cylinder_row.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\cylinder_row.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_person.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_shopping_order.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_add_shopping_order.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_transit.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_transit.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_blck_bg.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\blck_bg.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\anim_mytransition2.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\debug\\res\\anim\\mytransition2.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic__delete_outline.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic__delete_outline.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_customer_notify.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_customer_notify.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_stove.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\stove.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_row.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\item_row.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cancel_black.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_cancel_black.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_feedbb.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\feedbb.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_home_.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_close_shop.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_close_shop.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_payments.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_payments.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fabbg.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\fabbg.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_profile.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\bg_profile.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deposit.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\deposit.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_grid_bg.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\grid_bg.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_email.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_walkthrough.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_walkthrough.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\anim_mytransition.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\debug\\res\\anim\\mytransition.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_transit.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_transit.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_access.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_add_access.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_payments.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_payments.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_permission.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\permission.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vendor_reg.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_vendor_reg.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_vendorprofile.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_vendorprofile.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_accesory.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_accesory.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scooter.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\scooter.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shippingdelivery.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\shippingdelivery.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_my_payment.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\my_payment.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_black_bg.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\black_bg.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_customer_notify.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_customer_notify.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps_v.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_maps_v.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_less.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_expand_less.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_grey_border.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\circle_grey_border.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_gas.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_gas.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_errorimage.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\errorimage.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_place.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\place.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_slide_layout.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\slide_layout.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_privacypolicy.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\privacypolicy.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_resepass.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\resepass.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logout.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\logout.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_gas.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_gas.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_edit_profile.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_edit_profile.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deliveries.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\deliveries.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_print.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_print.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_item_view.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_item_view.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_additem.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\additem.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thumb.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\thumb.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogdeporemist.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialogdeporemist.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add_gas.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\add_gas.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_close.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\close.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pay_remit.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\pay_remit.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_openshop.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\openshop.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_cart_row.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\cart_row.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fabbg.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\fabbg.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paymentcash.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\paymentcash.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reset_pass.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_reset_pass.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logout.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\logout.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_delete.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_regshop.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\regshop.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_grey_border.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\grey_border.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_phone_in_talk.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_phone_in_talk.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_load.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\load.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbg_white.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbg_white.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_refresh.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_refresh.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_payment.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_payment.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_navigate_before.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_navigate_before.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\menu_navigation.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\menu\\navigation.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_person.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_person.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_stove.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\stove.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_queue.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_baseline_queue.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_accesory.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_accesory.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbtn_black.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbtn_black.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_close_shop.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\close_shop.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_refresh_distance.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\refresh_distance.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_locationrefresh.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\locationrefresh.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_vendorlogo.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xhdpi\\vendorlogo.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete_sweep.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_delete_sweep.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addproduct.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addproduct.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_canceld.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_canceld.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic__delete_outline.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic__delete_outline.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbg_white.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbg_white.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_email.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_items.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_items.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_a_photo.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_add_a_photo.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_navigate_before.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_navigate_before.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_okoagas_dialog.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\okoagas_dialog.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_phone_dialog.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\phone_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_feedbb.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\feedbb.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_grey_border.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\circle_grey_border.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gascylinder.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\gascylinder.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_share.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\share.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_privacypolicy.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\privacypolicy.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_open.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\open.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_notify_row.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\notify_row.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_locationhome.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\locationhome.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_myshop.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\myshop.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wallet_.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_wallet_.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_black_24dp.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_24dp.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mpesa.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\mpesa.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_about.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\about.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_access.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_add_access.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_row.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\item_row.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_accessory.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_accessory.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.ttf.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\debug\\res\\font\\poppins.ttf"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_close.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_close.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbtn.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbtn.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paymentcash.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\paymentcash.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_grid_bg.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\grid_bg.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_phone.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_phone.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_addgas.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_addgas.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_transit.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_transit.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_cart_row.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\cart_row.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_profile.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\bg_profile.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_more.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\more.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reset_pass.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_reset_pass.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mpesa.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\mpesa.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_edit_profile.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_edit_profile.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_orders_row.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\orders_row.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_access.jpg.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\access.jpg"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_vendorprofile.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_vendorprofile.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\anim_mytransition.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\debug\\res\\anim\\mytransition.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\raw_popglass.mp3.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\raw\\popglass.mp3"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_error.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\error.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_edit.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_notify_row.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\notify_row.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_shopping_order.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_add_shopping_order.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thumb.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\thumb.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_add_product.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_add_product.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vendorlogoo.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\vendorlogoo.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addgas1.jpg.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addgas1.jpg"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_storee.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\storee.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_feedback.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\feedback.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_payment_histrow.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\payment_histrow.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbg_black.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbg_black.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_accessory.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_accessory.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loginrafiki.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\loginrafiki.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_borderstyle.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\borderstyle.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_border.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\circle_border.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_timesc.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\timesc.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_place.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\place.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_myshop.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_myshop.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vendorlogo.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\vendorlogo.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_items.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_items.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_close.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\close.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deliveries.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\deliveries.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_payhist.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_payhist.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pay_remit.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\pay_remit.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_load.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\load.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_cart.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_add_cart.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btngradient.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\btngradient.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_vendorlogo.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xhdpi\\vendorlogo.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_home_.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_delivered.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_delivered.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete_sweep.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_delete_sweep.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_black_border.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\circle_black_border.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\profile.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_payhist.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_payhist.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_privacy.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_privacy.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addgas1.jpg.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addgas1.jpg"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_check.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_slide_layout.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\slide_layout.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_cart.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_add_cart.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_payment.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_payment.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expand_less.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_expand_less.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_orders_row.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\orders_row.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_timesc.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\timesc.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delivered.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_delivered.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btngradient.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\btngradient.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogdeporemist.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialogdeporemist.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.ttf.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\debug\\res\\font\\poppins.ttf"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_track.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\track.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_profile.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\edit_profile.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_phone_dialog.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\phone_dialog.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_profile.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\edit_profile.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vendorlogo.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\vendorlogo.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_canceld.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_canceld.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_orders.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_orders.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wallet_.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_wallet_.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vendor_map.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_vendor_map.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_error.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\error.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_add_image.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_add_image.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_confirmed.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_confirmed.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_delivered.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_delivered.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_phone.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_phone.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_openshop.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\openshop.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_refresh_distance.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\refresh_distance.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_orders.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_orders.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\anim_mytransition2.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\debug\\res\\anim\\mytransition2.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_open.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\open.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_gas_ror.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\gas_ror.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_borderstyle.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\borderstyle.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gascylinder.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\gascylinder.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_a_photo.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_add_a_photo.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_trash.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\trash.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_share.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\share.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loginrafiki.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\loginrafiki.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_locationrefresh.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\locationrefresh.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cancel_black.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_cancel_black.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_item_view.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_item_view.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vendorlogoo.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\vendorlogoo.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gps.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_gps.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gps.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_gps.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_phone_in_talk.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_phone_in_talk.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_trash.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\trash.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_resepass.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\resepass.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_walkthrough.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_walkthrough.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_order_transit.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\fragment_order_transit.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_black_24dp.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add_gas.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\add_gas.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_additem.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\additem.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addphoto.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addphoto.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_my_shop.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\my_shop.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_secondary_borderr.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\secondary_borderr.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_cylinder_row.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\cylinder_row.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_track.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\track.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_activate.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_activate.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\raw_mapstyle.json.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\raw\\mapstyle.json"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_feedack.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_feedack.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scooter.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\scooter.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_splash.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_activate.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_activate.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbtn_black.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roundbtn_black.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_more.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\more.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roubtnsec.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\roubtnsec.xml"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_add_gas.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\dialog_add_gas.xml"
     }
 ]

@@ -38,7 +38,10 @@ public class CylinderAdapter extends FirestoreRecyclerAdapter<Gas_Cylinder, Cyli
         holder.Name.setText(model.getName());
         holder.kg.setText(model.getKg());
 
-        Picasso.with(context).load(model.getCylinder_image()).placeholder(R.drawable.load).error(R.drawable.errorimage).into(holder.imageView);
+        Picasso.with(context).load(model.getCylinder_image())
+                .placeholder(R.drawable.load)
+                .error(R.drawable.errorimage)
+                .into(holder.imageView);
 
 
 

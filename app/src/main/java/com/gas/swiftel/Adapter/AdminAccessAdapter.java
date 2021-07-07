@@ -36,8 +36,10 @@ public class AdminAccessAdapter extends FirestoreRecyclerAdapter<AccessModel, Ad
     protected void onBindViewHolder(@NonNull AccessViewHolder holder, int position, @NonNull AccessModel model) {
 //        holder.Name.setText(model.getName());
 
-        Picasso.with(context).load(model.getAccessory_image()).fit().placeholder(R.drawable.load).error(R.drawable.errorimage).into(holder.imageView);
-        holder.Name.setVisibility(View.GONE);
+        Picasso.with(context).load(model.getAccessory_image())
+                .fit().placeholder(R.drawable.load)
+                .error(R.drawable.errorimage)
+                .into(holder.imageView);
 
 
     }
@@ -64,6 +66,9 @@ public class AdminAccessAdapter extends FirestoreRecyclerAdapter<AccessModel, Ad
             super(itemView);
 
             Name = itemView.findViewById(R.id.Cy_name);
+            Name.setVisibility(View.GONE);
+
+
 
             imageView = itemView.findViewById(R.id.Cy_Image);
             itemView.setOnClickListener(new View.OnClickListener() {

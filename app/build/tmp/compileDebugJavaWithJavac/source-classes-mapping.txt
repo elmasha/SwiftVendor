@@ -91,11 +91,7 @@ com/gas/swiftel/Fragments/Payments.java
  com.gas.swiftel.Fragments.Payments$15
  com.gas.swiftel.Fragments.Payments$16
  com.gas.swiftel.Fragments.Payments$17
- com.gas.swiftel.Fragments.Payments$18
- com.gas.swiftel.Fragments.Payments$19
  com.gas.swiftel.Fragments.Payments$2
- com.gas.swiftel.Fragments.Payments$20
- com.gas.swiftel.Fragments.Payments$21
  com.gas.swiftel.Fragments.Payments$3
  com.gas.swiftel.Fragments.Payments$4
  com.gas.swiftel.Fragments.Payments$4$1

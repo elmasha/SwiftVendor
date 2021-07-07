@@ -216,6 +216,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         }
 
             loadData();
+
             if (Shop_Status ==1){
 
                 LocationUpdates();
@@ -228,7 +229,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                 closed_shop.setVisibility(View.GONE);
                 location.setVisibility(View.VISIBLE);
                 shopInFoCard.setVisibility(View.VISIBLE);
-                if (cash_trips >= 3){
+                if (cash_trips >= maxTrips){
                     if (activation_fee.equals("200")){
                         DeactivateShop();
                     }
@@ -363,7 +364,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
 
                     }else if (activation_fee.equals("00")){
 
-                         successAlert("You have not remitted charges for 3 cash transactions. Remit Ksh/."+ UremittedCash +" to be able to proceed");
+                         successAlert("You have not remitted charges for "+cash_trips+" cash transactions. Remit Ksh/."+ UremittedCash +" to be able to proceed");
 
                     }else if (activation_fee.equals("200")){
 
@@ -524,6 +525,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                         if (dialog_close != null)dialog_close.dismiss();
                         Dialog_Close_Shop();
                         LinearfeedBack.setVisibility(View.GONE);
+                        relativeLayoutRefresh.setVisibility(View.GONE);
                     }else {
 
                         Toast.makeText(MapsVActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -677,7 +679,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
 
                             }else {
                                 shop_switch.toggle();
-                                distanceAndTime();
+
                             }
 
                             //getCLoseClient();
@@ -692,6 +694,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                             location.setVisibility(View.VISIBLE);
                             shopInFoCard.setVisibility(View.VISIBLE);
 
+                            Vendor_distance_Location();
 
                             showMarker(pickupLat,pickupLng);
                             if (cash_trips >= maxTrips){
@@ -710,6 +713,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                             closed_shop.setVisibility(View.VISIBLE);
                             OPen_shop.setBackground(getResources().getDrawable(R.drawable.roundbtn_black));
                             shopInFoCard.setVisibility(View.INVISIBLE);
+                            relativeLayoutRefresh.setVisibility(View.GONE);
                         break;
                         default:
                     }
