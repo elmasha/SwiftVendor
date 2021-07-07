@@ -347,9 +347,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
         DoubleBounce rotatingCircle = new DoubleBounce();
         progressBar1.setIndeterminateDrawable(rotatingCircle);
 
-        if (Cash_Trips >= 3){
+        if (Cash_Trips >= maxTrips){
             PaymentMessage.setVisibility(View.VISIBLE);
-            PaymentMessage.setText("You have not remitted charges for 3 cash transactions. Remit  Ksh/."+UnremitedCash+" to be able to proceed.");
+            PaymentMessage.setText("You have not remitted charges for "+Cash_Trips+" cash transactions. Remit  Ksh/."+UnremitedCash+" to be able to proceed.");
         }else {
 
         }
@@ -855,6 +855,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
     private String activation_fee;
      long Activeshops;
      long inActiveShops;
+     long maxTrips;
     private void loadData() {
         adminRef.document("Elmasha").addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
@@ -867,6 +868,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
                     Activeshops = documentSnapshot.getLong("Active_Shops");
                     inActiveShops = documentSnapshot.getLong("Inactive_shops");
+                    maxTrips = documentSnapshot.getLong("max_trips");
 
                 }
             }
@@ -894,7 +896,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
                     Cash_Trips = vendorUser.getCash_Trips();
 
                     Balance.setText(UnremitedCash +"");
-                    if (Cash_Trips >= 3){
+                    if (Cash_Trips >= maxTrips){
                         if (activation_fee.equals("200")){
                             DeactivateShop();
                         }
@@ -955,7 +957,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
                     Map<String, Object> notify = new HashMap();
                     notify.put("Name", "Shop is now inactive");
                     notify.put("User_ID", UiD);
-                    notify.put("type", "You have reached maximum of 3 cash transactions. Remit Ksh/."+UnremitedCash+" to activate");
+                    notify.put("type", "You have reached maximum of "+Cash_Trips+" cash transactions. Remit Ksh/."+UnremitedCash+" to activate");
                     notify.put("Order_iD",doc_ID);
                     notify.put("to",UiD);
                     notify.put("from",UiD);

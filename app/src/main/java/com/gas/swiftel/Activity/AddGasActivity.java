@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -445,7 +446,7 @@ public class AddGasActivity extends AppCompatActivity {
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setNestedScrollingEnabled(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
         recyclerView.setAdapter(adapter);
 
 

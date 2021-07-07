@@ -450,6 +450,7 @@ View view;
     private long UnremittedCash;
     long Activeshops;
     long inActiveShops;
+    long maxTrips;
     private void loadData() {
 
         adminRef.document("Elmasha").addSnapshotListener(new EventListener<DocumentSnapshot>() {
@@ -463,6 +464,7 @@ View view;
 
                      Activeshops = documentSnapshot.getLong("Active_Shops");
                      inActiveShops = documentSnapshot.getLong("Inactive_shops");
+                     maxTrips = documentSnapshot.getLong("max_trips");
 
                 }
             }
@@ -502,7 +504,7 @@ View view;
                     Trips_V.setText(Trips+"");
 
 
-                    if (Cash_Trips >= 3){
+                    if (Cash_Trips >= maxTrips){
                         if (activation_fee.equals("200")){
                             DeactivateShop();
                         }
@@ -525,7 +527,7 @@ View view;
                         feeStatus.setTextColor(Color.parseColor("#FA0707"));
                         Activation_payment.setVisibility(View.GONE);
                         PayError.setVisibility(View.VISIBLE);
-                        PayError.setText("You have not remitted charges for 3 cash transactions. Remit Ksh/."+ UnremittedCash +" to be able to proceed");
+                        PayError.setText("You have not remitted charges for "+Cash_Trips+" cash transactions. Remit Ksh/."+ UnremittedCash +" to be able to proceed");
                         ActivationLayout.setVisibility(View.GONE);
 
 
@@ -581,7 +583,7 @@ View view;
                     Map<String, Object> notify = new HashMap();
                     notify.put("Name", "Shop is now inactive");
                     notify.put("User_ID", UiD);
-                    notify.put("type", "You have not remitted charges for 3 cash transactions. Remit Ksh/."+ UnremittedCash +" to activate");
+                    notify.put("type", "You have not remitted charges for "+Cash_Trips+" cash transactions. Remit Ksh/."+ UnremittedCash +" to activate");
                     notify.put("Order_iD",UiD);
                     notify.put("to",UiD);
                     notify.put("from",UiD);

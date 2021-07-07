@@ -615,6 +615,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     private long UremittedCash,cash_trips;
     long Activeshops;
     long inActiveShops;
+    long maxTrips;
 
     private void loadData() {
         adminRef.document("Elmasha").addSnapshotListener(new EventListener<DocumentSnapshot>() {
@@ -628,6 +629,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
 
                     Activeshops = documentSnapshot.getLong("Active_Shops");
                     inActiveShops = documentSnapshot.getLong("Inactive_shops");
+                    maxTrips = documentSnapshot.getLong("max_trips");
 
                 }
             }
@@ -692,7 +694,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
 
 
                             showMarker(pickupLat,pickupLng);
-                            if (cash_trips >= 3){
+                            if (cash_trips >= maxTrips){
                                 if (activation_fee.equals("200")){
                                     DeactivateShop();
                                 }
@@ -821,7 +823,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                     Map<String, Object> notify = new HashMap();
                     notify.put("Name", "Shop is now inactive");
                     notify.put("User_ID", UiD);
-                    notify.put("type", "You have not remitted charges for 3 cash transactions. Remit Ksh/."+ UremittedCash +" to activate");
+                    notify.put("type", "You have not remitted charges for "+cash_trips+" cash transactions. Remit Ksh/."+ UremittedCash +" to activate");
                     notify.put("Order_iD",UiD);
                     notify.put("to",UiD);
                     notify.put("from",UiD);

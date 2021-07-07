@@ -2,6 +2,7 @@ package com.gas.swiftel.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -192,7 +193,7 @@ public class AddAccesoryActivity extends AppCompatActivity {
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setNestedScrollingEnabled(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
         recyclerView.setAdapter(adapter);
 
 
