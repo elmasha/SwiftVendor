@@ -1718,6 +1718,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activateLayout
 id activity_chooser_view_content
 id add
 id adjust_height
@@ -1809,7 +1810,6 @@ id error_x
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab_action1
 id fab_action2
 id fab_expand_menu_button
 id fab_label

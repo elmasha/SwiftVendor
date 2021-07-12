@@ -2,7 +2,9 @@ package com.gas.swiftel.Activity;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
@@ -22,8 +24,13 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+import com.gas.swiftel.Common;
+import com.gas.swiftel.Interface.RetrofitInterface;
 import com.gas.swiftel.Model.Gas_Vendor;
+import com.gas.swiftel.Model.ResponseStk;
+import com.gas.swiftel.Model.StkQuey;
 import com.gas.swiftel.R;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
@@ -41,6 +48,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -107,9 +115,16 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
 import de.hdodenhof.circleimageview.CircleImageView;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 import static com.gas.swiftel.Activity.WalkthroughActivity.REQUEST_CHECK_SETTINGS;
 import static com.gas.swiftel.Activity.WalkthroughActivity.REQUEST_ENABLE_GPS;
@@ -125,7 +140,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     private static final int GALLERY_REQUEST_CODE = 1;
     private GoogleMap mMap;
     public static GoogleApiClient googleApiClient1;
-    public static  Location lastLocation;
+    public static Location lastLocation;
     public static LocationRequest locationRequest;
     private FirebaseAuth mAuth;
 
@@ -134,7 +149,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     private Marker vendorMarker;
     private LatLng vendorLocation;
     private Button finderRoute;
-    private  String userId;
+    private String userId;
 
     private Snackbar snackbar;
 
@@ -146,31 +161,40 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     private static int FAST_INTERVAL = 1000;
     private static int DISPLACEMENT = 10;
 
-    private FloatingActionButton fabMenu,fabRefresh,Feedback;
+    private FloatingActionButton fabMenu, fabRefresh, Feedback;
 
     private SwitchCompat shop_switch;
     SupportMapFragment mapFragment;
     private Button OPen_shop;
 
-    private String GasName,GasDesc,GasKgs;
-    private long Gasprice,GasrefillPrice;
-    private String ItemName,ItemDesc,ItemPrice;
+    private String GasName, GasDesc, GasKgs;
+    private long Gasprice, GasrefillPrice;
+    private String ItemName, ItemDesc, ItemPrice;
 
     private ImageView gasImage;
     private CircleImageView MyProfile;
 
-    private  int radius;
-    private String VendorFoundId ;
-    private static final int LIMIT= 3;
+    private int radius;
+    private String VendorFoundId;
+    private static final int LIMIT = 3;
 
-    private TextView lable_switch,location,ShopName,ShopNo,Shopstatus,closed_shop,refreshText;
+    private TextView lable_switch, location, ShopName, ShopNo, Shopstatus, closed_shop, refreshText;
 
     private long backPressedTime;
     private Toast backToast;
+    private CountDownTimer mCountDownTimer;
+    private boolean mTimerRunning;
+    private long mTimeLeftInMillis = 27000;
+    private Retrofit retrofit;
+    private RetrofitInterface retrofitInterface;
+    private String BASE_URL = Common.BASE_URL;
+    public  String Product_Id,CheckoutRequestID,ResponseCode,
+            ResultCode,ResponseDescription,ResultDesc;
+    private ProgressDialog progressStk;
 
     private int Shop_Status;
 
-    private EditText gasName,gasDesc,gasPrice,gasRefilprice,itemName,itemDesc,itemAmount;
+    private EditText gasName, gasDesc, gasPrice, gasRefilprice, itemName, itemDesc, itemAmount;
     private Spinner gasKgs;
     private Button submitGas;
     FirebaseStorage storage;
@@ -189,66 +213,67 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     GeoFirestore geoFireStorePreferAvailbale = new GeoFirestore(PreferVendorAvailableRef);
     CollectionReference vendorRef = db.collection("SwiftGas_Vendor");
     CollectionReference FeedBack_Ref = db.collection("FeedBack_SwiftVendor");
+    CollectionReference Payment_HistRef = db.collection("Payment_History");
     GeoFirestore geoFireStoreWorking = new GeoFirestore(VendorWoringkRef);
 
 
     private List<Polyline> polylines;
     private static final int[] COLORS = new int[]{R.color.colorSecondary};
 
-    private String customerId = "", destination,vendor_name;
-    private LatLng destinationLatLng,pickupLatLng;
+    private String customerId = "", destination, vendor_name;
+    private LatLng destinationLatLng, pickupLatLng;
     private float rideDistance;
     private String activation_fee;
-    private double pickupLat,pickupLng;
-    private AlertDialog dialog_success,dialog_close;
+    private double pickupLat, pickupLng;
+    private AlertDialog dialog_success, dialog_close;
 
 
     private CardView shopInFoCard;
-    private LinearLayout VendorAssest,LinearfeedBack;
+    private LinearLayout VendorAssest, LinearfeedBack;
     private RelativeLayout relativeLayoutRefresh;
     private int ShopState;
 
     @Override
     protected void onStart() {
         super.onStart();
-        if (googleApiClient1!= null){
+        if (googleApiClient1 != null) {
             googleApiClient1.connect();
         }
 
-            loadData();
+        loadData();
 
-            if (Shop_Status ==1){
+        if (Shop_Status == 1) {
 
-                LocationUpdates();
+            LocationUpdates();
 
-                VendorAssest.setVisibility(View.VISIBLE);
-                fabRefresh.setVisibility(View.VISIBLE);
-                OPen_shop.setText("Manage shop");
-                lable_switch.setText("Switch to close ");
-                OPen_shop.setBackground(getResources().getDrawable(R.drawable.roubtnsec));
-                closed_shop.setVisibility(View.GONE);
-                location.setVisibility(View.VISIBLE);
-                shopInFoCard.setVisibility(View.VISIBLE);
-                if (cash_trips >= maxTrips){
-                    if (activation_fee.equals("200")){
-                        DeactivateShop();
-                    }
-
+            VendorAssest.setVisibility(View.VISIBLE);
+            fabRefresh.setVisibility(View.VISIBLE);
+            OPen_shop.setText("Manage shop");
+            lable_switch.setText("Switch to close ");
+            OPen_shop.setBackground(getResources().getDrawable(R.drawable.roubtnsec));
+            closed_shop.setVisibility(View.GONE);
+            location.setVisibility(View.VISIBLE);
+            shopInFoCard.setVisibility(View.VISIBLE);
+            if (cash_trips >= maxTrips) {
+                if (activation_fee.equals("200")) {
+                    DeactivateShop();
                 }
 
-            }else if (Shop_Status== 0){
-
-                VendorAssest.setVisibility(View.INVISIBLE);
-
-                closed_shop.setVisibility(View.VISIBLE);
-                OPen_shop.setText("Shop Closed");
-                OPen_shop.setVisibility(View.GONE);
-                lable_switch.setText("Switch to open");
-                OPen_shop.setBackground(getResources().getDrawable(R.drawable.roundbtn_black));
-                shopInFoCard.setVisibility(View.INVISIBLE);
-
-
             }
+
+        } else if (Shop_Status == 0) {
+
+            VendorAssest.setVisibility(View.INVISIBLE);
+
+            closed_shop.setVisibility(View.VISIBLE);
+            OPen_shop.setText("Shop Closed");
+            OPen_shop.setVisibility(View.GONE);
+            lable_switch.setText("Switch to open");
+            OPen_shop.setBackground(getResources().getDrawable(R.drawable.roundbtn_black));
+            shopInFoCard.setVisibility(View.INVISIBLE);
+
+
+        }
 
     }
 
@@ -278,7 +303,6 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     }
 
 
-
     @Override
     protected void onStop() {
         super.onStop();
@@ -291,13 +315,13 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps_v);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-         mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
         mAuth = FirebaseAuth.getInstance();
 
-        shop_switch =  findViewById(R.id.Shop_switch);
+        shop_switch = findViewById(R.id.Shop_switch);
         OPen_shop = findViewById(R.id.Open_shop);
 
         lable_switch = findViewById(R.id.lableSwitch);
@@ -312,9 +336,16 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         Feedback = findViewById(R.id.Feedback);
         LinearfeedBack = findViewById(R.id.L125);
         closed_shop = findViewById(R.id.close_shop24);
-        MyProfile  = findViewById(R.id.MyProfileImage);
+        MyProfile = findViewById(R.id.MyProfileImage);
         relativeLayoutRefresh = findViewById(R.id.layout_refresh);
         refreshText = findViewById(R.id.refreshText);
+        retrofit = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        retrofitInterface = retrofit.create(RetrofitInterface.class);
+
 
 
         Feedback.setOnClickListener(new View.OnClickListener() {
@@ -336,13 +367,13 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         shopInFoCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (shop_switch.isChecked()){
+                if (shop_switch.isChecked()) {
 
-                    startActivity(new Intent(getApplicationContext(),Home_Activity.class));
+                    startActivity(new Intent(getApplicationContext(), Home_Activity.class));
 
-                }else {
+                } else {
 
-                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"Shop Closed",Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout, "Shop Closed", Snackbar.LENGTH_LONG);
                     snackbar.show();
                 }
 
@@ -353,28 +384,27 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         fabMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (shop_switch.isChecked()){
+                if (shop_switch.isChecked()) {
 
 
-                    if (activation_fee.equals("0")){
+                    if (activation_fee.equals("0")) {
 
-                        successAlert("To Upload your products please Visit Profile to activate your account or click " +
-                                "pay later to continue");
+                        successAlert("To Upload your products please Visit Profile to activate your account.");
 
 
-                    }else if (activation_fee.equals("00")){
+                    } else if (activation_fee.equals("00")) {
 
-                         successAlert("You have not remitted charges for "+cash_trips+" cash transactions. Remit Ksh/."+ UremittedCash +" to be able to proceed");
+                        successAlert("You have not remitted charges for " + cash_trips + " cash transactions. Remit Ksh/." + UremittedCash + " to be able to proceed");
 
-                    }else if (activation_fee.equals("200")){
+                    } else if (activation_fee.equals("200")) {
 
-                        startActivity(new Intent(getApplicationContext(),AddItemsActivity.class));
+                        startActivity(new Intent(getApplicationContext(), AddItemsActivity.class));
 
                     }
 
-                }else {
+                } else {
 
-                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"Shop Closed",Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout, "Shop Closed", Snackbar.LENGTH_LONG);
                     snackbar.show();
                 }
 
@@ -385,14 +415,14 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         fabRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (shop_switch.isChecked()){
+                if (shop_switch.isChecked()) {
 
                     LocationUpdates();
                     Vendor_Location();
 
-                }else {
+                } else {
 
-                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"Shop Closed",Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout, "Shop Closed", Snackbar.LENGTH_LONG);
                     snackbar.show();
                 }
 
@@ -402,30 +432,28 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         relativeLayoutRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (shop_switch.isChecked()){
+                if (shop_switch.isChecked()) {
 
                     LocationUpdates();
                     Vendor_Location();
 
-                }else {
+                } else {
 
-                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"Shop Closed",Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout, "Shop Closed", Snackbar.LENGTH_LONG);
                     snackbar.show();
                 }
             }
         });
 
 
-
-
         shop_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isOnline) {
-                if (isOnline){
-                    ShopState =1;
+                if (isOnline) {
+                    ShopState = 1;
 
                     shopStatus();
-                }else{
+                } else {
                     ShopState = 0;
                     shopStatus();
 
@@ -435,19 +463,17 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         });
 
 
-
-
         OPen_shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if (shop_switch.isChecked()){
+                if (shop_switch.isChecked()) {
 
-                    startActivity(new Intent(getApplicationContext(),Home_Activity.class));
+                    startActivity(new Intent(getApplicationContext(), Home_Activity.class));
 
-                }else {
+                } else {
 
-                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"Shop is closed",Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout, "Shop is closed", Snackbar.LENGTH_LONG);
                     snackbar.show();
 
                 }
@@ -461,10 +487,10 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     }
 
 
-    void shopStatus (){
+    void shopStatus() {
 
 
-        if (ShopState ==1){
+        if (ShopState == 1) {
 
             String UID = mAuth.getCurrentUser().getUid();
             WriteBatch batch = db.batch();
@@ -474,16 +500,16 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
 
-                    if (task.isSuccessful()){
+                    if (task.isSuccessful()) {
 
                         if (dialog_close != null) dialog_close.dismiss();
                         LocationUpdates();
-                      //  Vendor_Location();
+                        //  Vendor_Location();
                         //getCLoseClient();
                         VendorAssest.setVisibility(View.VISIBLE);
                         fabRefresh.setVisibility(View.VISIBLE);
                         LinearfeedBack.setVisibility(View.VISIBLE);
-                        Snackbar snackbar = Snackbar.make(coordinatorLayout,"Shop Opened",Snackbar.LENGTH_LONG);
+                        Snackbar snackbar = Snackbar.make(coordinatorLayout, "Shop Opened", Snackbar.LENGTH_LONG);
                         snackbar.show();
                         OPen_shop.setText("Manage shop");
                         closed_shop.setVisibility(View.GONE);
@@ -493,15 +519,15 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                         location.setVisibility(View.VISIBLE);
                         shopInFoCard.setVisibility(View.VISIBLE);
 
-                        showMarker(pickupLat,pickupLng);
-                        if (cash_trips >= 3){
-                            if (activation_fee.equals("200")){
+                        showMarker(pickupLat, pickupLng);
+                        if (cash_trips >= 3) {
+                            if (activation_fee.equals("200")) {
                                 DeactivateShop();
                             }
 
                         }
 
-                    }else {
+                    } else {
 
                         Toast.makeText(MapsVActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
@@ -510,7 +536,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
             });
 
 
-        }else if (ShopState ==0){
+        } else if (ShopState == 0) {
 
 
             String UID = mAuth.getCurrentUser().getUid();
@@ -521,12 +547,12 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
 
-                    if (task.isSuccessful()){
-                        if (dialog_close != null)dialog_close.dismiss();
+                    if (task.isSuccessful()) {
+                        if (dialog_close != null) dialog_close.dismiss();
                         Dialog_Close_Shop();
                         LinearfeedBack.setVisibility(View.GONE);
                         relativeLayoutRefresh.setVisibility(View.GONE);
-                    }else {
+                    } else {
 
                         Toast.makeText(MapsVActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
@@ -535,15 +561,13 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
             });
 
 
-
         }
-
 
 
     }
 
     private void showMarker(double pickupLat, double pickupLng) {
-        if (vendorMarker != null)vendorMarker.remove();
+        if (vendorMarker != null) vendorMarker.remove();
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(pickupLat, pickupLng), 15.0f));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 300, null);
         vendorMarker = mMap.addMarker(new MarkerOptions()
@@ -553,11 +577,15 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.storee)));
     }
 
-    private TextView Dia_Header,Dia_time;
+    private TextView Dia_Header, Dia_time;
+
+    private ProgressBar progressBar_pay;
+    private LinearLayout linearLayoutActivate;
+    private Button confirm,cancel_pay;
     public void successAlert(String responseDescription) {
 
         Date currentTime = Calendar.getInstance().getTime();
-        String date = DateFormat.format("dd MMM ,yyyy | hh:mm a",new Date(String.valueOf(currentTime))).toString();
+        String date = DateFormat.format("dd MMM ,yyyy | hh:mm a", new Date(String.valueOf(currentTime))).toString();
 
         AlertDialog.Builder mbuilder = new AlertDialog.Builder(MapsVActivity.this);
         View mView = getLayoutInflater().inflate(R.layout.dialog_activate, null);
@@ -569,24 +597,37 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         Dia_Header = mView.findViewById(R.id.LablePay);
         Dia_time = mView.findViewById(R.id.LablePayTime);
         final TextView showtime = mView.findViewById(R.id.LablePayTime);
-        final Button confirm = mView.findViewById(R.id.Confirm_pay);
-        final Button cancel_pay = mView.findViewById(R.id.Cancel_pay);
+         confirm = mView.findViewById(R.id.Confirm_pay);
+        cancel_pay = mView.findViewById(R.id.Cancel_pay);
+        progressBar_pay = mView.findViewById(R.id.progress_pay);
+        linearLayoutActivate = mView.findViewById(R.id.activateLayout);
+        DoubleBounce doubleBounce = new DoubleBounce();
+        progressBar_pay.setIndeterminateDrawable(doubleBounce);
 
 
-
-
-
-        showData.setText(responseDescription );
-        Dia_time.setText("Date: "+date);
-
-
+        showData.setText(responseDescription);
+        Dia_time.setText("Date: " + date);
 
 
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(),AddItemsActivity.class));
+                if (activation_fee.equals("0")) {
+
+                    ToastBack("Visit your profile to complete your account activation..");
+                    startActivity(new Intent(getApplicationContext(), Home_Activity.class));
+
+
+                } else if (activation_fee.equals("00")) {
+                    Mpesa_Dialog();
+
+                } else if (activation_fee.equals("200")) {
+
+                    startActivity(new Intent(getApplicationContext(), AddItemsActivity.class));
+
+                }
+
 
             }
         });
@@ -595,21 +636,318 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
             @Override
             public void onClick(View view) {
 
-                if (dialog_success != null)dialog_success.dismiss();
+                if (dialog_success != null) dialog_success.dismiss();
 
-           }
+            }
+        });
+
+    }
+
+
+    private void newtime() {
+        new CountDownTimer(15000, 1000) {
+            public void onTick(long millisUntilFinished) {
+            }
+
+            public void onFinish() {
+                if (CheckoutRequestID != null) {
+                    StkQueryRemit(CheckoutRequestID);
+
+                } else {
+
+                    if (progressStk != null) progressStk.dismiss();
+                    //Toast.makeText(getContext(), "StkPush Request timeout...", Toast.LENGTH_LONG).show();
+                    ToastBack("StkPush Request timeout...");
+                    // progressStk.dismiss();
+                }
+            }
+        }.start();
+    }
+
+
+    private TextView Name, Paytime, UserName, Paytype, PayID, PayTrips, PayAmount, PayPhone, closePay;
+    private FloatingActionButton deletePay, printPay;
+    private AlertDialog dialog;
+
+
+
+
+    private long Balance_wallet;
+    private Button boost_balance;
+    private TextView show_No, close_Dialog, edit_no, input_Amount, cashTrips;
+    private EditText input_phone;
+    private ProgressBar progressBar1;
+
+    private String Cash, PaymentName, PaymentType, No;
+    private LinearLayout linearLayoutPhone;
+    private int PhoneState = 0;
+
+
+    private void startTimer() {
+        mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                mTimeLeftInMillis = millisUntilFinished;
+                updateCountDownText();
+            }
+
+            @Override
+            public void onFinish() {
+                mTimerRunning = false;
+                if (CheckoutRequestID != null) {
+
+                    StkQueryRemit(CheckoutRequestID);
+
+                } else {
+
+                    if (progressStk != null) progressStk.dismiss();
+                    Toast.makeText(getApplicationContext(), "StkPush Request timeout..", Toast.LENGTH_LONG).show();
+
+                }
+
+            }
+        }.start();
+        mTimerRunning = true;
+
+    }
+
+    private void pauseTimer() {
+        mCountDownTimer.cancel();
+        mTimerRunning = false;
+
+    }
+
+    private void resetTimer() {
+        mTimeLeftInMillis = 27000;
+        updateCountDownText();
+
+    }
+
+    private void updateCountDownText() {
+        int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
+        int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
+        String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+        // Timer.setText(timeLeftFormatted);
+    }
+
+    private void Mpesa_Dialog() {
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(MapsVActivity.this);
+        builder.setTitle("Lipa na Mpesa express");
+        builder.setIcon(R.drawable.mpesa);
+        builder.setMessage("Are you sure  " + Phone + "\nis your Mpesa number ?");
+        builder.setPositiveButton("Yes",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+
+                        String no =  Phone.substring(1);
+                        stkRemit(String.valueOf(UremittedCash),no);
+                        startTimer();
+                        progressBar_pay.setVisibility(View.VISIBLE);
+                        linearLayoutActivate.setVisibility(View.GONE);
+                    }
+                });
+        builder.setNegativeButton("No",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        linearLayoutActivate.setVisibility(View.VISIBLE);
+
+
+                    }
+                });
+
+        builder.setCancelable(true);
+        builder.show();
+    }
+
+
+    private String Doc_ID;
+
+
+    private void stkRemit(String cash, String phone) {
+        String PhoneNumber = "254" + phone;
+        Doc_ID = Payment_HistRef.document().getId();
+        PaymentName = "Remit deposit";
+        PaymentType = "Total cash transaction " + cash_trips + " for remit Ksh/=" + cash;
+        Map<String, Object> stk_Push = new HashMap<>();
+        stk_Push.put("amount", cash);
+        stk_Push.put("phone", PhoneNumber);
+        stk_Push.put("transDec", "Remit collection.");
+        stk_Push.put("Name", PaymentName);
+        stk_Push.put("PhoneNo", "Payment from " + No);
+        stk_Push.put("Type", PaymentType);
+        stk_Push.put("User_ID", mAuth.getCurrentUser().getUid());
+        stk_Push.put("User_name", First_name);
+        stk_Push.put("ActiveNo", Activeshops);
+        stk_Push.put("InActiveNo", inActiveShops);
+        stk_Push.put("Trips", cash_trips);
+        stk_Push.put("Payment_ID", Doc_ID);
+
+
+        Call<ResponseStk> callStk = retrofitInterface.stk_pushRemit(stk_Push);
+
+        callStk.enqueue(new Callback<ResponseStk>() {
+            @Override
+            public void onResponse(Call<ResponseStk> call, Response<ResponseStk> response) {
+                if (response.code() == 200) {
+                    newtime();
+                    progressStk = new ProgressDialog(MapsVActivity.this);
+                    progressStk.setCancelable(false);
+                    progressStk.setMessage("Mpesa StkPush transaction..");
+                    progressStk.show();
+
+                    ResponseStk responseStk = response.body();
+                    String responeDesc = responseStk.getCustomerMessage();
+                    ResponseCode = responseStk.getResponseCode();
+                    CheckoutRequestID = responseStk.getCheckoutRequestID();
+                    String errorMessage = responseStk.getErrorMessage();
+                    String errorCode = responseStk.getErrorCode();
+                    Log.i("TAG", "CheckoutRequestID: " + response.body());
+
+                    //Toast.makeText(getContext(), responeDesc , Toast.LENGTH_LONG).show();
+                    if (responeDesc != null) {
+                        if (responeDesc.equals("Success. Request accepted for processing")) {
+
+                            ToastBack(responeDesc);
+
+                        }
+                    } else {
+
+                        if (errorMessage.equals("No ICCID found on NMS")) {
+
+                            ToastBack("Please provide a valid mpesa number.");
+                            progressStk.dismiss();
+                        }
+
+                        ToastBack(errorMessage);
+                        progressStk.dismiss();
+                    }
+
+
+                    linearLayoutActivate.setVisibility(View.VISIBLE);
+                    progressBar_pay.setVisibility(View.INVISIBLE);
+                    if (dialog_success!= null) dialog_success.dismiss();
+
+                } else if (response.code() == 404) {
+
+
+                    Toast.makeText(MapsVActivity.this, "Bad request", Toast.LENGTH_SHORT).show();
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseStk> call, Throwable t) {
+
+                Toast.makeText(MapsVActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                startTimer();
+            }
+        });
+
+    }
+
+    ////----Mpesa stk Query-----
+    private void StkQueryRemit(String checkoutRequestID) {
+
+        Map<String, Object> stk_Query = new HashMap<>();
+        stk_Query.put("checkoutRequestId", checkoutRequestID);
+        Call<StkQuey> callQuery = retrofitInterface.stk_QueryRemit(stk_Query);
+
+        callQuery.enqueue(new Callback<StkQuey>() {
+            @Override
+            public void onResponse(Call<StkQuey> call, Response<StkQuey> response) {
+                if (response != null) {
+
+                    if (response.code() == 200) {
+
+                        StkQuey stkQuey1 = response.body();
+
+                        Log.i("TAG", "onResponse:" + response.body());
+                        String body = stkQuey1.getResultDesc();
+                        ToastBack(body);
+                        ResponseDescription = stkQuey1.getResponseDescription();
+                        ResultCode = stkQuey1.getResultCode();
+                        progressStk.dismiss();
+                        pauseTimer();
+                        resetTimer();
+                        if (ResultCode.equals("0")) {
+
+//                        BatchProcess();
+                            new SweetAlertDialog(MapsVActivity.this, SweetAlertDialog.SUCCESS_TYPE)
+                                    .setTitleText("Deposit successfully.")
+                                    .show();
+                            progressStk.dismiss();
+
+                            startActivity(new Intent(getApplicationContext(),AddItemsActivity.class));
+
+
+                        } else if (ResultCode.equals("1032")) {
+
+                            // successAlert2("This request was cancelled",BtnStatus);
+
+                            new SweetAlertDialog(MapsVActivity.this, SweetAlertDialog.WARNING_TYPE)
+                                    .setTitleText("This payment was cancelled")
+                                    .setConfirmText("Close")
+                                    .show();
+
+                        } else if (ResultCode.equals("1031")) {
+
+                            // successAlert2("This request was cancelled",BtnStatus);
+
+                            new SweetAlertDialog(MapsVActivity.this, SweetAlertDialog.WARNING_TYPE)
+                                    .setTitleText("This payment was cancelled")
+                                    .setConfirmText("Close")
+                                    .show();
+
+                        } else if (ResultCode.equals("2001")) {
+                            // successAlert2("Sorry you entered a wrong pin",BtnStatus);
+                            new SweetAlertDialog(MapsVActivity.this, SweetAlertDialog.ERROR_TYPE)
+                                    .setTitleText("Sorry you entered a wrong pin. Try again")
+                                    .setConfirmText("Okay")
+                                    .show();
+
+
+                        } else if (ResultCode.equals("1")) {
+                            //  successAlert2("Sorry you entered a wrong pin",BtnStatus);
+                            new SweetAlertDialog(MapsVActivity.this, SweetAlertDialog.WARNING_TYPE)
+                                    .setTitleText("You current balance is insufficient.")
+                                    .setConfirmText("Close")
+                                    .show();
+                        }
+
+
+                    } else if (response.code() == 404) {
+
+                        Toast.makeText(MapsVActivity.this, "Bad request", Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+
+
+            }
+
+            @Override
+            public void onFailure(Call<StkQuey> call, Throwable t) {
+                ToastBack(t.getMessage().toString());
+                if (CheckoutRequestID != null) {
+
+                    StkQueryRemit(CheckoutRequestID);
+
+                } else {
+
+                    if (progressStk != null) progressStk.dismiss();
+
+                }
+            }
         });
 
 
-
-
-
-
-
-
-
-
     }
+
+
+
 
 
     //----LOAD DATA------///

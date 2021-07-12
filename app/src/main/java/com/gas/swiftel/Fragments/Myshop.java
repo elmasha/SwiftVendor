@@ -240,7 +240,7 @@ View view;
         builder.setPositiveButton("Yes",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        stkActivate("1");
+                        stkActivate("200");
                         startTimer();
                         dialog.dismiss();
                         progressDialog = new ProgressDialog(getContext());

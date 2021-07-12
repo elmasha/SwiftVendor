@@ -116,45 +116,22 @@
 <!--        android:layout_height="match_parent">-->
 <!--    </android.support.v4.widget.SwipeRefreshLayout>-->
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_action2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorBlack"
+        app:fab_colorPressed="@color/ColorGrey"
+        app:fab_size="normal"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="5dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="60dp"
         android:layout_marginRight="5dp"
-        android:visibility="invisible"
-        app:fab_addButtonColorPressed="@color/ColorWhite"
-        app:fab_addButtonColorNormal="@color/colorBlack"
-        app:fab_addButtonPlusIconColor="@color/ColorWhite"
-        app:fab_labelStyle="@style/custom_fab">
-
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_action1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fab_colorNormal="@color/colorPrimary"
-            app:fab_colorPressed="@color/colorBlack"
-            app:fab_size="mini"
-            app:fab_title=" Add gas "
-            />
-
-
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_action2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fab_colorNormal="@color/colorPrimary"
-            app:fab_colorPressed="@color/colorBlack"
-            app:fab_size="mini"
-            app:fab_icon="@drawable/addproduct"
-            app:fab_title=" Add accesories "
-            />
-
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        app:fab_icon="@drawable/add_gas"
+        app:fab_title=" Add accesories "
+        />
 
 </RelativeLayout>

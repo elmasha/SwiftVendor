@@ -183,7 +183,7 @@ public class MyShopFragment extends Fragment {
 
 
 
-        fab1 = root.findViewById(R.id.Add_Item);
+        fab1 = root.findViewById(R.id.fab_action2);
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

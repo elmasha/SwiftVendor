@@ -233,34 +233,7 @@ public class VendorProfileFragment extends Fragment {
         
 
 
-//        Deposit_remits.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Dialog_Deposit();
-//
-//            }
-//        });
 
-//
-//        Date currentTime = Calendar.getInstance().getTime();
-//        String date = DateFormat.format("dd MMM ,yyyy",new Date(String.valueOf(currentTime))).toString();
-//
-//
-//
-//
-//
-
-//
-//
-//
-
-//
-//        Activation_payment.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                AlertSKPush();
-//            }
-//        });
 
 
         loadData();

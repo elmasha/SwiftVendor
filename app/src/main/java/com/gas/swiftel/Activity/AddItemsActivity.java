@@ -632,6 +632,7 @@ public class AddItemsActivity extends AppCompatActivity {
             super.onBackPressed();
 
             Intent logout = new Intent(getApplicationContext(),Home_Activity.class);
+            logout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(logout);
             finish();
 
