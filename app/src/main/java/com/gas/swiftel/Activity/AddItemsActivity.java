@@ -628,24 +628,11 @@ public class AddItemsActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (WinsdowState == 0) {
             super.onBackPressed();
 
             Intent logout = new Intent(getApplicationContext(),Home_Activity.class);
             logout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(logout);
             finish();
-
-
-            return;
-        }else if (WinsdowState == 1){
-            WinsdowState = 0;
-            r3.setVisibility(View.VISIBLE);
-            r1.setVisibility(View.INVISIBLE);
-            r2.setVisibility(View.INVISIBLE);
-        }
-
-
-
     }
 }

@@ -426,13 +426,14 @@ com/gas/swiftel/Activity/VendorRegActivity.java
  com.gas.swiftel.Activity.VendorRegActivity
  com.gas.swiftel.Activity.VendorRegActivity$1
  com.gas.swiftel.Activity.VendorRegActivity$10
- com.gas.swiftel.Activity.VendorRegActivity$10$1
- com.gas.swiftel.Activity.VendorRegActivity$10$2
- com.gas.swiftel.Activity.VendorRegActivity$10$2$1
  com.gas.swiftel.Activity.VendorRegActivity$11
+ com.gas.swiftel.Activity.VendorRegActivity$11$1
+ com.gas.swiftel.Activity.VendorRegActivity$11$2
+ com.gas.swiftel.Activity.VendorRegActivity$11$2$1
  com.gas.swiftel.Activity.VendorRegActivity$12
  com.gas.swiftel.Activity.VendorRegActivity$13
  com.gas.swiftel.Activity.VendorRegActivity$14
+ com.gas.swiftel.Activity.VendorRegActivity$15
  com.gas.swiftel.Activity.VendorRegActivity$2
  com.gas.swiftel.Activity.VendorRegActivity$3
  com.gas.swiftel.Activity.VendorRegActivity$4

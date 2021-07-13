@@ -234,22 +234,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-//         currentUser = mAuth.getCurrentUser();
-//
-//        if (currentUser != null){
-//
-//            Intent to_Home = new Intent(getApplicationContext(),Home_Activity.class);
-//            startActivity(to_Home);
-//            finish();
-//
-//        }else{
-//
-//
-//        }
-
-
-
-
 
     }
 

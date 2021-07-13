@@ -149,9 +149,5 @@ public class Home_Activity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
 
-    }
 }

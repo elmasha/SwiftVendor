@@ -71,8 +71,8 @@ public class WalkthroughActivity extends AppCompatActivity {
 
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 7000;
     public static final int PLAY_SERVICE_RES_REQUEST = 7001;
-    int PERMISSION_ALL = 1;
-    String[] PERMISSIONS = {Manifest.permission.READ_CONTACTS, Manifest.permission.CALL_PHONE,
+    int PERMISSION_ALL = 10000;
+    String[] PERMISSIONS = {Manifest.permission.CALL_PHONE,
             Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.READ_EXTERNAL_STORAGE};
 
     @Override
@@ -271,11 +271,11 @@ public class WalkthroughActivity extends AppCompatActivity {
                 NextBtn.setEnabled(true);
                 BackBtn.setEnabled(false);
                 BackBtn.setVisibility(View.INVISIBLE);
-                get_started.setVisibility(View.INVISIBLE);
+                get_started.setVisibility(View.GONE);
                 get_started.setEnabled(false);
                 NextBtn.setText("Next");
-                checkBox.setVisibility(View.INVISIBLE);
-                privacy.setVisibility(View.INVISIBLE);
+                checkBox.setVisibility(View.GONE);
+                privacy.setVisibility(View.GONE);
                 BackBtn.setText("");
 
             }else if (position == 1){
@@ -284,7 +284,7 @@ public class WalkthroughActivity extends AppCompatActivity {
                 BackBtn.setEnabled(false);
                 BackBtn.setVisibility(View.INVISIBLE);
                 checkBox.setEnabled(true);
-                get_started.setVisibility(View.INVISIBLE);
+                get_started.setVisibility(View.GONE);
                 get_started.setEnabled(false);
                 NextBtn.setText("Swipe");
                 privacy.setVisibility(View.VISIBLE);
@@ -294,12 +294,12 @@ public class WalkthroughActivity extends AppCompatActivity {
             }
             else if(position == 2){
                 NextBtn.setEnabled(true);
-                privacy.setVisibility(View.INVISIBLE);
+                privacy.setVisibility(View.GONE);
                 BackBtn.setEnabled(true);
                 BackBtn.setVisibility(View.VISIBLE);
                 get_started.setVisibility(View.VISIBLE);
                 get_started.setEnabled(true);
-                checkBox.setVisibility(View.INVISIBLE);
+                checkBox.setVisibility(View.GONE);
                 checkBox.setEnabled(false);
                 NextBtn.setText("");
                 BackBtn.setText("Back");

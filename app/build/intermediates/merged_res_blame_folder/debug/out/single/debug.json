@@ -8,12 +8,12 @@
         "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\placeholder.png"
     },
     {
-        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_gas.xml.flat",
-        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_gas.xml"
-    },
-    {
         "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_close_shop.png.flat",
         "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\close_shop.png"
+    },
+    {
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_gas.xml.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_add_gas.xml"
     },
     {
         "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_permission.png.flat",
@@ -56,16 +56,16 @@
         "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\circle_black_border.xml"
     },
     {
-        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_storee.png.flat",
-        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\storee.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addphoto.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addphoto.png"
     },
     {
         "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_grey_border.xml.flat",
         "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\grey_border.xml"
     },
     {
-        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addphoto.png.flat",
-        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\addphoto.png"
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_storee.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\storee.png"
     },
     {
         "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_secondary_borderr.xml.flat",
@@ -234,6 +234,10 @@
     {
         "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_item_view.xml.flat",
         "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\layout\\activity_item_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_user.png.flat",
+        "source": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\src\\main\\res\\drawable\\user.png"
     },
     {
         "merged": "C:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thumb.xml.flat",

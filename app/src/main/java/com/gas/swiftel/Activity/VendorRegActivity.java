@@ -25,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gas.swiftel.R;
+import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -84,6 +85,7 @@ public class VendorRegActivity extends AppCompatActivity {
     private UploadTask uploadTask;
     private AlertDialog dialog2;
     private CircleImageView Client_image,addProfile;
+    private FloatingActionButton add_Profile;
 
 
     @Override
@@ -120,6 +122,7 @@ public class VendorRegActivity extends AppCompatActivity {
         email = findViewById(R.id.Email);
         password = findViewById(R.id.Password);
         addProfile = findViewById(R.id.Add_profile);
+        add_Profile = findViewById(R.id.FabAddProfile);
         con_Password = findViewById(R.id.Con_Password);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
@@ -137,6 +140,17 @@ public class VendorRegActivity extends AppCompatActivity {
             }
         });
 
+
+
+        add_Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CropImage.activity().setGuidelines(CropImageView.Guidelines.ON)
+                        .setMinCropResultSize(512,512)
+                        .setAspectRatio(1,1)
+                        .start(VendorRegActivity.this);
+            }
+        });
 
         addProfile.setOnClickListener(new View.OnClickListener() {
             @Override

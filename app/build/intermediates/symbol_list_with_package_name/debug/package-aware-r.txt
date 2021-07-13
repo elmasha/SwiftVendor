@@ -1398,6 +1398,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable track
 drawable trash
+drawable user
 drawable vendorlogo
 drawable vendorlogoo
 drawable warning_circle
@@ -1471,6 +1472,7 @@ id EmailReset
 id Emaillog
 id Emailv
 id FUNCTION
+id FabAddProfile
 id FadingCircle
 id Feedback
 id Feedback2
