@@ -59,7 +59,8 @@ public class WalkthroughActivity extends AppCompatActivity {
     private RelativeLayout relativeLayout;
 
     private CheckBox checkBox;
-
+    String[] PERMISSIONS = {Manifest.permission.CALL_PHONE,
+            Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.READ_EXTERNAL_STORAGE};
     private FirebaseAuth mAuth;
     private String current_user;
 
@@ -72,8 +73,7 @@ public class WalkthroughActivity extends AppCompatActivity {
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 7000;
     public static final int PLAY_SERVICE_RES_REQUEST = 7001;
     int PERMISSION_ALL = 10000;
-    String[] PERMISSIONS = {Manifest.permission.CALL_PHONE,
-            Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.READ_EXTERNAL_STORAGE};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

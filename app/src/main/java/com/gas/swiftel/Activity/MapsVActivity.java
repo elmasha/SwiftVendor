@@ -520,9 +520,13 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                         shopInFoCard.setVisibility(View.VISIBLE);
 
                         showMarker(pickupLat, pickupLng);
-                        if (cash_trips >= 3) {
+                        if (cash_trips >= maxTrips) {
                             if (activation_fee.equals("200")) {
                                 DeactivateShop();
+                            }else if (activation_fee.equals("00")){
+//                                if (dialog_success != null)dialog_success.dismiss();
+//                                successAlert("You have not remitted charges for " + cash_trips + " cash transactions. Remit Ksh/." + UremittedCash + " to be able to proceed");
+
                             }
 
                         }
@@ -1039,6 +1043,12 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                                 if (activation_fee.equals("200")){
                                     DeactivateShop();
                                 }
+                                else if (activation_fee.equals("00")){
+
+                                    if (dialog_success != null)dialog_success.dismiss();
+                                    successAlert("You have not remitted charges for " + cash_trips + " cash transactions. Remit Ksh/." + UremittedCash + " to be able to proceed");
+
+                                }
 
                             }
 
@@ -1142,26 +1152,20 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
     //----Deactivate shop-----
     private String doc_id;
     private void DeactivateShop() {
+        String UiD = mAuth.getCurrentUser().getUid();
+        if (activation_fee.equals("200")){
 
-        String MUID = mAuth.getCurrentUser().getUid();
-        WriteBatch batch = db.batch();
-        DocumentReference doc1 = vendorRef.document(MUID);
-        batch.update(doc1, "Activation_fee", "00");
-        batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
+        HashMap<String,Object> addNew = new HashMap<>();
+        addNew.put("Activation_fee", "00");
+        vendorRef.document(UiD).update(addNew).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
-                if (task.isSuccessful()) {
-                    long minus = Activeshops - 1;
-                    long add = inActiveShops + 1;
-
-
-                    HashMap<String ,Object> admin = new HashMap<>();
-                    admin.put("Active_Shops",minus);
-                    admin.put("Inactive_shops",add);
-                    adminRef.document("Elmasha").update(admin);
+                if (task.isSuccessful()){
 
                     String UiD = mAuth.getCurrentUser().getUid();
+                    long minus = Activeshops - 1;
+                    long add = inActiveShops + 1;
                     Map<String, Object> notify = new HashMap();
                     notify.put("Name", "Shop is now inactive");
                     notify.put("User_ID", UiD);
@@ -1170,14 +1174,52 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                     notify.put("to",UiD);
                     notify.put("from",UiD);
                     notify.put("timestamp", FieldValue.serverTimestamp());
-                    vendorRef.document(mAuth.getCurrentUser().getUid()).collection("Notifications").add(notify);
+
+
+                    WriteBatch batch = db.batch();
+                    DocumentReference doc1 =  vendorRef.document(UiD).collection("Notifications").document(UiD);
+                    batch.set(doc1, notify);
+                    batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+                    HashMap<String ,Object> admin = new HashMap<>();
+                    admin.put("Active_Shops",minus);
+                    admin.put("Inactive_shops",add);
+                    adminRef.document("Elmasha").update(admin);
+                  // AddNotification(mAuth.getCurrentUser().getUid());
                 }else {
 
                     ToastBack(task.getException().getMessage());
                 }
-
             }
         });
+
+
+        }
+
+
+    }
+
+
+    private void AddNotification(String UiD){
+
+        if (activation_fee.equals("00")){
+
+            Map<String, Object> notify = new HashMap();
+            notify.put("Name", "Shop is now inactive");
+            notify.put("User_ID", UiD);
+            notify.put("type", "You have not remitted charges for "+cash_trips+" cash transactions. Remit Ksh/."+ UremittedCash +" to activate");
+            notify.put("Order_iD",UiD);
+            notify.put("to",UiD);
+            notify.put("from",UiD);
+            notify.put("timestamp", FieldValue.serverTimestamp());
+            vendorRef.document(UiD).collection("Notifications").document(UiD).set(notify);
+
+        }
+
 
     }
 

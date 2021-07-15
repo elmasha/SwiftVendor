@@ -5,12 +5,14 @@ import android.animation.ValueAnimator;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.SystemClock;
 
 import androidx.annotation.NonNull;
@@ -23,7 +25,14 @@ import com.gas.swiftel.R;
 import com.gas.swiftel.Model.Orders_request;
 import com.gas.swiftel.Remote.IGoogleAPI;
 import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.google.android.gms.common.api.ResolvableApiException;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResponse;
+import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.core.app.ActivityCompat;
@@ -106,6 +115,7 @@ import java.util.Random;
 
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -148,7 +158,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
     private float v;
     private Handler handler;
     private int index, next;
-    public static int UPDATE_INTERVAL = 2000;
+    public static int UPDATE_INTERVAL = 1000;
     public static int FASTEST_INTERVAL = 1000;
     public static int DISPLACEMENT = 10;
 
@@ -193,7 +203,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
     SupportMapFragment mapFragment;
     private CircleImageView client_Image;
     private String Order_status;
-    private Button startNavigation,ExchangeBtn;
+    private Button startNavigation, ExchangeBtn;
     private FloatingActionButton fabGps, userNo;
 
     Runnable drawPathRunnable = new Runnable() {
@@ -295,6 +305,14 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
         itemQuantity = findViewById(R.id.Mitem_qty);
         itemDistance = findViewById(R.id.Mitem_distance);
 
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        locationRequest = new LocationRequest();
+        locationRequest.setInterval(UPDATE_INTERVAL);
+        locationRequest.setFastestInterval(FASTEST_INTERVAL);
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setSmallestDisplacement(DISPLACEMENT);
+
+
 
         BackToOrders.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -379,7 +397,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                 int shop_No = dice.nextInt(100000) + 1;
                 deliverytKey = String.valueOf(shop_No);
 
-               // Toast.makeText(VendorMapActivity.this, deliverytKey, Toast.LENGTH_SHORT).show();
+                // Toast.makeText(VendorMapActivity.this, deliverytKey, Toast.LENGTH_SHORT).show();
 
                 ConfirmOrder();
 
@@ -427,8 +445,6 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
 
     }
-
-
 
 
     private class FetchUrl extends AsyncTask<String, Void, String> {
@@ -510,17 +526,17 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
             try {
                 jObject = new JSONObject(jsonData[0]);
-                Log.d("ParserTask",jsonData[0].toString());
+                Log.d("ParserTask", jsonData[0].toString());
                 DataParser parser = new DataParser();
                 Log.d("ParserTask", parser.toString());
 
                 // Starts parsing data
                 routes = parser.parse(jObject);
-                Log.d("ParserTask","Executing routes");
-                Log.d("ParserTask",routes.toString());
+                Log.d("ParserTask", "Executing routes");
+                Log.d("ParserTask", routes.toString());
 
             } catch (Exception e) {
-                Log.d("ParserTask",e.toString());
+                Log.d("ParserTask", e.toString());
                 e.printStackTrace();
             }
             return routes;
@@ -556,25 +572,24 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                 lineOptions.width(10);
                 lineOptions.color(Color.RED);
 
-                Log.d("onPostExecute","onPostExecute lineoptions decoded");
+                Log.d("onPostExecute", "onPostExecute lineoptions decoded");
 
             }
 
             // Drawing polyline in the Google Map for the i-th route
-            if(lineOptions != null) {
+            if (lineOptions != null) {
                 mMap.addPolyline(lineOptions);
-            }
-            else {
-                Log.d("onPostExecute","without Polylines drawn");
+            } else {
+                Log.d("onPostExecute", "without Polylines drawn");
             }
         }
     }
 
     class DataParser {
 
-        List<List<HashMap<String,String>>> parse(JSONObject jObject){
+        List<List<HashMap<String, String>>> parse(JSONObject jObject) {
 
-            List<List<HashMap<String, String>>> routes = new ArrayList<>() ;
+            List<List<HashMap<String, String>>> routes = new ArrayList<>();
             JSONArray jRoutes;
             JSONArray jLegs;
             JSONArray jSteps;
@@ -584,25 +599,25 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                 jRoutes = jObject.getJSONArray("routes");
 
                 /** Traversing all routes */
-                for(int i=0;i<jRoutes.length();i++){
-                    jLegs = ( (JSONObject)jRoutes.get(i)).getJSONArray("legs");
+                for (int i = 0; i < jRoutes.length(); i++) {
+                    jLegs = ((JSONObject) jRoutes.get(i)).getJSONArray("legs");
                     List path = new ArrayList<>();
 
                     /** Traversing all legs */
-                    for(int j=0;j<jLegs.length();j++){
-                        jSteps = ( (JSONObject)jLegs.get(j)).getJSONArray("steps");
+                    for (int j = 0; j < jLegs.length(); j++) {
+                        jSteps = ((JSONObject) jLegs.get(j)).getJSONArray("steps");
 
                         /** Traversing all steps */
-                        for(int k=0;k<jSteps.length();k++){
+                        for (int k = 0; k < jSteps.length(); k++) {
                             String polyline = "";
-                            polyline = (String)((JSONObject)((JSONObject)jSteps.get(k)).get("polyline")).get("points");
+                            polyline = (String) ((JSONObject) ((JSONObject) jSteps.get(k)).get("polyline")).get("points");
                             List<LatLng> list = decodePoly(polyline);
 
                             /** Traversing all points */
-                            for(int l=0;l<list.size();l++){
+                            for (int l = 0; l < list.size(); l++) {
                                 HashMap<String, String> hm = new HashMap<>();
-                                hm.put("lat", Double.toString((list.get(l)).latitude) );
-                                hm.put("lng", Double.toString((list.get(l)).longitude) );
+                                hm.put("lat", Double.toString((list.get(l)).latitude));
+                                hm.put("lng", Double.toString((list.get(l)).longitude));
                                 path.add(hm);
                             }
                         }
@@ -612,7 +627,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
             } catch (JSONException e) {
                 e.printStackTrace();
-            }catch (Exception e){
+            } catch (Exception e) {
             }
 
 
@@ -657,7 +672,6 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
             return poly;
         }
     }
-
 
 
     private long Cash_trips;
@@ -893,40 +907,6 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
     }
 
 
-    private void DeliveredOrder() {
-
-        ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Please wait request Delivery");
-        progressDialog.show();
-
-
-        WriteBatch batch = db.batch();
-        DocumentReference doc1 = orderRef.document(Doc_id);
-        batch.update(doc1, "Order_status", 3);
-        batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-
-                if (task.isSuccessful()) {
-
-
-                    Toast.makeText(VendorMapActivity.this, "Request Delivered", Toast.LENGTH_SHORT).show();
-                    progressDialog.dismiss();
-
-                } else {
-
-                    Toast.makeText(VendorMapActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                    progressDialog.dismiss();
-
-                }
-
-
-            }
-        });
-
-    }
-
-
     private void TransitOrder() {
 
         ProgressDialog progressDialog = new ProgressDialog(this);
@@ -1072,7 +1052,6 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
     }
 
 
-
     private void Exchange_Cylinder() {
 
         if (Doc_id != null) {
@@ -1141,13 +1120,11 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
     }
 
 
-
-
-    private void SendSMS (String deliveryKey){
+    private void SendSMS(String deliveryKey) {
 
         Twilio.init(getResources().getString(R.string.ACCOUNT_SID), getResources().getString(R.string.ACCOUNT_TOKEN));
 
-        String msg = "Your delivery key is"+deliveryKey+"";
+        String msg = "Your delivery key is" + deliveryKey + "";
         Message message = Message.creator(new PhoneNumber("+254746291229"), // to
                 new PhoneNumber("+13212339373"), // from
                 msg)
@@ -1175,8 +1152,6 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
 
                     if (task.isSuccessful()) {
-
-
 
 
                         Toast.makeText(VendorMapActivity.this, "Request Confirmed", Toast.LENGTH_SHORT).show();
@@ -1229,6 +1204,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
     ///---LOAD DETAILS---
     private String exCylinder;
+
     private void LoadDataInt() {
 
 
@@ -1314,7 +1290,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                             On_Delivered.setVisibility(View.VISIBLE);
                             showData.setVisibility(INVISIBLE);
 
-                            if (exCylinder.equals("Yes")){
+                            if (exCylinder.equals("Yes")) {
                                 ConfirmRequest.setVisibility(INVISIBLE);
                                 startNavigation.setVisibility(INVISIBLE);
                                 ConfirmRequest.setVisibility(INVISIBLE);
@@ -1323,7 +1299,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                                 showData.setVisibility(View.VISIBLE);
                                 ExchangeBtn.setVisibility(View.GONE);
                                 showData.setText("Gas cylinder exchanged & order has been delivered..");
-                            }else if (exCylinder.equals("No")){
+                            } else if (exCylinder.equals("No")) {
                                 ConfirmRequest.setVisibility(INVISIBLE);
                                 startNavigation.setVisibility(INVISIBLE);
                                 ConfirmRequest.setVisibility(INVISIBLE);
@@ -1366,7 +1342,8 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
 
     private String CustomerID, Qty;
-    private double lat1,lang1;
+    private double lat1, lang1;
+
     private void LoadData() {
 
 
@@ -1426,7 +1403,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                             }
 
                         } else if (PaymentMethod.equals("Commitment paid")) {
-                            textPrice.setText("Ksh/="+Price);
+                            textPrice.setText("Ksh/=" + Price);
                         }
 
                         itemQuantity.setText("Qty:" + Qty);
@@ -1471,8 +1448,8 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                             On_Delivered.setVisibility(View.VISIBLE);
                             showData.setVisibility(INVISIBLE);
 
-                            if (exCylinder != null){
-                                if (exCylinder.equals("Yes")){
+                            if (exCylinder != null) {
+                                if (exCylinder.equals("Yes")) {
                                     ConfirmRequest.setVisibility(INVISIBLE);
                                     startNavigation.setVisibility(INVISIBLE);
                                     ConfirmRequest.setVisibility(INVISIBLE);
@@ -1481,7 +1458,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
                                     showData.setVisibility(View.VISIBLE);
                                     ExchangeBtn.setVisibility(View.GONE);
                                     showData.setText("Gas cylinder exchanged & order has been delivered..");
-                                }else if (exCylinder.equals("No")){
+                                } else if (exCylinder.equals("No")) {
                                     ConfirmRequest.setVisibility(INVISIBLE);
                                     startNavigation.setVisibility(INVISIBLE);
                                     ConfirmRequest.setVisibility(INVISIBLE);
@@ -1575,8 +1552,6 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
             } else if (time >= 60) {
             } else if (time > 1) {
             }
-
-
 
 
         }
@@ -1804,7 +1779,144 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
         mMap.setMyLocationEnabled(true);
     }
 
+    LocationCallback locationCallback = new LocationCallback() {
+        @Override
+        public void onLocationResult(LocationResult locationResult) {
+            super.onLocationResult(locationResult);
+//            LatLng distlatLng = new LatLng(locationResult.getLastLocation().getLongitude(),locationResult.getLastLocation().getLongitude());
+//            if (mMap != null){
+//                if (vendorMarker != null)vendorMarker.remove();
+//                {
+//                    MarkerOptions markerOptions =  new MarkerOptions();
+//                    markerOptions.position(distlatLng);
+//                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.deliveries));
+//                    markerOptions.anchor((float)0.5 ,(float)0.5);
+//                    markerOptions.rotation(locationResult.getLastLocation().getBearing());
+//
+//                    vendorMarker = mMap.addMarker(markerOptions);
+//                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(distlatLng,16));
+//
+//                }
 
+                // setShopMarker(locationResult.getLastLocation());
+            //}
+
+        }
+    };
+
+
+
+    private void getLastLocation() {
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        Task<Location> locationTask = fusedLocationClient.getLastLocation();
+        locationTask.addOnSuccessListener(new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if (location != null){
+
+                    Toast.makeText(VendorMapActivity.this,
+                            location.getLatitude()+"\n "+location.getLongitude()+"",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        locationTask.addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(VendorMapActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.i("TAG", "onFailure: "+e.getLocalizedMessage());
+            }
+        });
+
+    }
+
+    private void CheckSettingsAndUpdateLocation(){
+        LocationSettingsRequest request = new LocationSettingsRequest.Builder()
+                .addLocationRequest(locationRequest).build();
+        SettingsClient client = LocationServices.getSettingsClient(this);
+        Task<LocationSettingsResponse> locationSettingsResponseTask = client.checkLocationSettings(request);
+        locationSettingsResponseTask.addOnSuccessListener(new OnSuccessListener<LocationSettingsResponse>() {
+            @Override
+            public void onSuccess(LocationSettingsResponse locationSettingsResponse) {
+                startlocationUpdates();
+            }
+        });
+
+        locationSettingsResponseTask.addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+//                if (e instanceof ResolvableApiException){
+//                    ResolvableApiException apiException = (ResolvableApiException)e;
+//                    try {
+//                        apiException.startResolutionForResult(WalkthroughActivity.class,3333);
+//                    }catch (IntentSender.SendIntentException exception){
+//                        exception.printStackTrace();
+//                    }
+
+             //   }
+                Toast.makeText(VendorMapActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void setShopMarker(Location location){
+        LatLng distlatLng = new LatLng(location.getLongitude(),location.getLatitude());
+
+        if (vendorMarker == null)
+        {
+            MarkerOptions markerOptions =  new MarkerOptions();
+            markerOptions.position(distlatLng);
+            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.deliveries));
+//            markerOptions.anchor((float)0.5 ,(float)0.5);
+            markerOptions.rotation(location.getBearing());
+
+            vendorMarker = mMap.addMarker(markerOptions);
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(distlatLng,16));
+
+        }else {
+//            vendorMarker.setPosition(latLng);
+//            vendorMarker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.deliveries));
+//            vendorMarker.setRotation(location.getBearing());
+//            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,16));
+
+
+        }
+
+    }
+
+
+    private void startlocationUpdates() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
+
+    }
+
+
+    private void stoplocationUpdate() {
+
+        fusedLocationClient.removeLocationUpdates(locationCallback);
+
+    }
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
@@ -1843,7 +1955,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
+        googleApiClient.connect();
     }
 
     @Override
@@ -1860,6 +1972,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
             return;
         }
         lastLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
+
 
 
     }
@@ -1884,10 +1997,13 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
     protected void onStart() {
         super.onStart();
+        CheckSettingsAndUpdateLocation();
+        startlocationUpdates();
         LoadData();
         buildGoogleApiCLient();
         checkLocationPermission();
         googleApiClient.connect();
+
         // Call GoogleApiClient connection when starting the Activity
 
     }
@@ -1897,6 +2013,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
     @Override
     protected void onResume() {
         super.onResume();
+
         LoadData();
         if (!googleApiClient.isConnected()) {
             googleApiClient.connect();
@@ -1921,7 +2038,7 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
     protected void onStop() {
         super.onStop();
         googleApiClient.disconnect();
-
+        stoplocationUpdate();
     }
 
 
@@ -2026,6 +2143,9 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
     }
 
+
+
+
     private void DisplayVendorLocation() {
          userId =mAuth.getCurrentUser().getUid();
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -2052,18 +2172,40 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
             final double lat = lastLocation.getLatitude();
             final double lng = lastLocation.getLongitude();
 
+
+            LatLng distlatLng = new LatLng(lastLocation.getLongitude(),lastLocation.getLongitude());
+            if (mMap != null){
+                if (vendorMarker != null)vendorMarker.remove();
+                {
+                    MarkerOptions markerOptions =  new MarkerOptions();
+                    markerOptions.position(distlatLng);
+                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.deliveries));
+                    markerOptions.anchor((float)0.5 ,(float)0.5);
+                    markerOptions.rotation(lastLocation.getBearing());
+
+                    vendorMarker = mMap.addMarker(markerOptions);
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(distlatLng,16));
+
+                }
+
+//             setShopMarker(locationResult.getLastLocation());
+            }
+
+
+
+
             //update to firestore
             geoFirestoreAvailable.setLocation(usder_id, new GeoPoint(lat, lng), new GeoFirestore.CompletionListener() {
                 @Override
                 public void onComplete(Exception e) {
 
-                    if (vendorMarker != null)
-
-                        vendorMarker.remove();
-                        vendorMarker = mMap.addMarker(new MarkerOptions()
-                            .title("My Shop")
-                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.deliveries))
-                            .position(new LatLng(lat, lng)));
+//                    if (vendorMarker != null)
+//
+//                        vendorMarker.remove();
+//                        vendorMarker = mMap.addMarker(new MarkerOptions()
+//                            .title("My Shop")
+////                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.deliveries))
+//                            .position(new LatLng(lat, lng)));
 
 
                 }

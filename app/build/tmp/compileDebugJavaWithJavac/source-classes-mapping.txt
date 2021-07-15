@@ -90,7 +90,6 @@ com/gas/swiftel/Fragments/Payments.java
  com.gas.swiftel.Fragments.Payments$14
  com.gas.swiftel.Fragments.Payments$15
  com.gas.swiftel.Fragments.Payments$16
- com.gas.swiftel.Fragments.Payments$17
  com.gas.swiftel.Fragments.Payments$2
  com.gas.swiftel.Fragments.Payments$3
  com.gas.swiftel.Fragments.Payments$4
@@ -156,14 +155,18 @@ com/gas/swiftel/Activity/VendorMapActivity.java
  com.gas.swiftel.Activity.VendorMapActivity$23
  com.gas.swiftel.Activity.VendorMapActivity$24
  com.gas.swiftel.Activity.VendorMapActivity$25
+ com.gas.swiftel.Activity.VendorMapActivity$25$1
  com.gas.swiftel.Activity.VendorMapActivity$26
- com.gas.swiftel.Activity.VendorMapActivity$26$1
  com.gas.swiftel.Activity.VendorMapActivity$27
  com.gas.swiftel.Activity.VendorMapActivity$28
  com.gas.swiftel.Activity.VendorMapActivity$29
  com.gas.swiftel.Activity.VendorMapActivity$3
  com.gas.swiftel.Activity.VendorMapActivity$30
  com.gas.swiftel.Activity.VendorMapActivity$31
+ com.gas.swiftel.Activity.VendorMapActivity$32
+ com.gas.swiftel.Activity.VendorMapActivity$33
+ com.gas.swiftel.Activity.VendorMapActivity$34
+ com.gas.swiftel.Activity.VendorMapActivity$35
  com.gas.swiftel.Activity.VendorMapActivity$4
  com.gas.swiftel.Activity.VendorMapActivity$5
  com.gas.swiftel.Activity.VendorMapActivity$6
@@ -206,6 +209,7 @@ com/gas/swiftel/Activity/MapsVActivity.java
  com.gas.swiftel.Activity.MapsVActivity$19
  com.gas.swiftel.Activity.MapsVActivity$2
  com.gas.swiftel.Activity.MapsVActivity$20
+ com.gas.swiftel.Activity.MapsVActivity$20$1
  com.gas.swiftel.Activity.MapsVActivity$21
  com.gas.swiftel.Activity.MapsVActivity$22
  com.gas.swiftel.Activity.MapsVActivity$23

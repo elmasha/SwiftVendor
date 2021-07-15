@@ -506,7 +506,7 @@ View view;
 
                     if (Cash_Trips >= maxTrips){
                         if (activation_fee.equals("200")){
-                            DeactivateShop();
+                           // DeactivateShop();
                         }
                        
                     }
@@ -560,42 +560,51 @@ View view;
     private String doc_id;
     private void DeactivateShop() {
 
-        String MUID = mAuth.getCurrentUser().getUid();
-        WriteBatch batch = db.batch();
-        DocumentReference doc1 = vendorRef.document(MUID);
-        batch.update(doc1, "Activation_fee", "00");
-        batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
+        if (activation_fee.equals("200")){
 
-                if (task.isSuccessful()) {
+            String MUID = mAuth.getCurrentUser().getUid();
+            WriteBatch batch = db.batch();
+            DocumentReference doc1 = vendorRef.document(MUID);
+            batch.update(doc1, "Activation_fee", "00");
+            batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
 
-                    long minus = Activeshops - 1;
-                    long add = inActiveShops + 1;
+                    if (task.isSuccessful()) {
+
+                        long minus = Activeshops - 1;
+                        long add = inActiveShops + 1;
 
 
-                    HashMap<String ,Object> admin = new HashMap<>();
-                    admin.put("Active_Shops",minus);
-                    admin.put("Inactive_shops",add);
-                    adminRef.document("Elmasha").update(admin);
+                        HashMap<String ,Object> admin = new HashMap<>();
+                        admin.put("Active_Shops",minus);
+                        admin.put("Inactive_shops",add);
+                        adminRef.document("Elmasha").update(admin);
+                        AddNotification();
+                    }else {
 
-                    String UiD = mAuth.getCurrentUser().getUid();
-                    Map<String, Object> notify = new HashMap();
-                    notify.put("Name", "Shop is now inactive");
-                    notify.put("User_ID", UiD);
-                    notify.put("type", "You have not remitted charges for "+Cash_Trips+" cash transactions. Remit Ksh/."+ UnremittedCash +" to activate");
-                    notify.put("Order_iD",UiD);
-                    notify.put("to",UiD);
-                    notify.put("from",UiD);
-                    notify.put("timestamp", FieldValue.serverTimestamp());
-                    vendorRef.document(mAuth.getCurrentUser().getUid()).collection("Notifications").add(notify);
-                }else {
+                        Toast.makeText(getContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
 
-                    Toast.makeText(getContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
+            });
+        }
 
-            }
-        });
+
+    }
+
+    private void AddNotification(){
+        String UiD = mAuth.getCurrentUser().getUid();
+        Map<String, Object> notify = new HashMap();
+        notify.put("Name", "Shop is now inactive");
+        notify.put("User_ID", UiD);
+        notify.put("type", "You have not remitted charges for "+Cash_Trips+" cash transactions. Remit Ksh/."+ UnremittedCash +" to activate");
+        notify.put("Order_iD",UiD);
+        notify.put("to",UiD);
+        notify.put("from",UiD);
+        notify.put("timestamp", FieldValue.serverTimestamp());
+        vendorRef.document(UiD).collection("Notifications").add(notify);
+
 
     }
 

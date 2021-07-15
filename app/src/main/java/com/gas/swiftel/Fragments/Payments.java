@@ -403,53 +403,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
     }
 
     private String Doc_ID,doc_ID;
-    private void PaymentHistory(String cash, String no,String paymentName,String paymentType,String  first_name, String checkoutRequestID) {
-
-        Doc_ID = Payment_HistRef.document().getId();
-        String UiD = mAuth.getCurrentUser().getUid();
-        Map<String, Object> notify = new HashMap();
-        notify.put("Name", paymentName);
-        notify.put("Amount", cash);
-        notify.put("PhoneNo", "Payment from "+no);
-        notify.put("Type",paymentType);
-        notify.put("User_ID",UiD);
-        notify.put("User_name",first_name);
-        notify.put("Trips",Cash_Trips);
-        notify.put("Payment_ID",Doc_ID);
-        notify.put("MpesaCheckout_ID",checkoutRequestID);
-        notify.put("timestamp", FieldValue.serverTimestamp());
-        Payment_HistRef.document(Doc_ID).set(notify).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-
-                if (task.isSuccessful()){
-
-                    doc_ID = NotifyRef.document().getId();
-                    String UiD = mAuth.getCurrentUser().getUid();
-                    Map<String, Object> notify = new HashMap();
-                    notify.put("Name", paymentName);
-                    notify.put("User_ID", UiD);
-                    notify.put("type", paymentType);
-                    notify.put("Order_iD",doc_ID);
-                    notify.put("to",UiD);
-                    notify.put("from",UiD);
-                    notify.put("timestamp", FieldValue.serverTimestamp());
-                    NotifyRef.document(Doc_ID).set(notify);
-                    new SweetAlertDialog(getContext(),SweetAlertDialog.SUCCESS_TYPE)
-                            .setTitleText("Remits deposited successfully.")
-                            .show();
-                    Deposit_Dialog.dismiss();
-
-
-                }else {
-
-                    Toast.makeText(getContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-
-                }
-            }
-        });
-
-    }
 
 
 
@@ -776,7 +729,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
                     Balance.setText(UnremitedCash +"");
                     if (Cash_Trips >= maxTrips){
                         if (activation_fee.equals("200")){
-                            DeactivateShop();
+                            //DeactivateShop();
+                        }else if (activation_fee.equals("00")){
+                            Dialog_Deposit();
                         }
 
                     }else {
@@ -810,44 +765,56 @@ import retrofit2.converter.gson.GsonConverterFactory;
     private String doc_id;
     private void DeactivateShop() {
 
-        String MUID = mAuth.getCurrentUser().getUid();
-        WriteBatch batch = db.batch();
-        DocumentReference doc1 = vendorRef.document(MUID);
-        batch.update(doc1, "Activation_fee", "00");
-        batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
+        if (activation_fee.equals("200")){
+            String MUID = mAuth.getCurrentUser().getUid();
+            WriteBatch batch = db.batch();
+            DocumentReference doc1 = vendorRef.document(MUID);
+            batch.update(doc1, "Activation_fee", "00");
+            batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
 
-                if (task.isSuccessful()) {
-
-
-                    //----Admin function ----
-                long minus = Activeshops - 1;
-                long add = inActiveShops + 1;
-                HashMap<String ,Object> admin = new HashMap<>();
-                admin.put("Active_Shops",minus);
-                admin.put("Inactive_shops",add);
-                adminRef.document("Elmasha").update(admin);
+                    if (task.isSuccessful()) {
 
 
-                    doc_ID = NotifyRef.getId();
-                    String UiD = mAuth.getCurrentUser().getUid();
-                    Map<String, Object> notify = new HashMap();
-                    notify.put("Name", "Shop is now inactive");
-                    notify.put("User_ID", UiD);
-                    notify.put("type", "You have reached maximum of "+Cash_Trips+" cash transactions. Remit Ksh/."+UnremitedCash+" to activate");
-                    notify.put("Order_iD",doc_ID);
-                    notify.put("to",UiD);
-                    notify.put("from",UiD);
-                    notify.put("timestamp", FieldValue.serverTimestamp());
-                    vendorRef.document(mAuth.getCurrentUser().getUid()).collection("Notifications").add(notify);
-                }else {
+                        //----Admin function ----
+                        long minus = Activeshops - 1;
+                        long add = inActiveShops + 1;
+                        HashMap<String ,Object> admin = new HashMap<>();
+                        admin.put("Active_Shops",minus);
+                        admin.put("Inactive_shops",add);
+                        adminRef.document("Elmasha").update(admin);
+                        AddNotification();
+                    }else {
 
-                    Toast.makeText(getContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+
                 }
+            });
+        }
 
-            }
-        });
+
+    }
+
+    private void AddNotification(){
+
+        if (activation_fee.equals("00")){
+
+            doc_ID = NotifyRef.getId();
+            String UiD = mAuth.getCurrentUser().getUid();
+            Map<String, Object> notify = new HashMap();
+            notify.put("Name", "Shop is now inactive");
+            notify.put("User_ID", UiD);
+            notify.put("type", "You have reached maximum of "+Cash_Trips+" cash transactions. Remit Ksh/."+UnremitedCash+" to activate");
+            notify.put("Order_iD",doc_ID);
+            notify.put("to",UiD);
+            notify.put("from",UiD);
+            notify.put("timestamp", FieldValue.serverTimestamp());
+            vendorRef.document(UiD).collection("Notifications").add(notify);
+
+
+        }
 
     }
 
