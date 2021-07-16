@@ -1,4 +1,4 @@
-#Thu Jul 15 22:11:58 EAT 2021
+#Fri Jul 16 15:41:02 EAT 2021
 path.3=classes3.dex
 path.2=classes2.dex
 path.1=classes.dex
@@ -7,10 +7,10 @@ path.0=classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
-base.4=C\:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
+base.4=C\:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
 renamed.0=classes.dex
-base.3=C\:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.2=C\:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.1=C\:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
-base.0=C\:\\Users\\elmasha\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.3=C\:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\user\\AndroidStudioProjects\\SwiftVendor\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.4=classes4.dex

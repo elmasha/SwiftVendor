@@ -1048,6 +1048,10 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                                     if (dialog_success != null)dialog_success.dismiss();
                                     successAlert("You have not remitted charges for " + cash_trips + " cash transactions. Remit Ksh/." + UremittedCash + " to be able to proceed");
 
+                                }else if(activation_fee.equals("0")){
+                                    if (dialog_success != null)dialog_success.dismiss();
+                                    successAlert("To upload products or manage your shop please Visit Profile to activate your account.");
+
                                 }
 
                             }

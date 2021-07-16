@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1f9e2567f119b4835c05d6750492a3c/jetified-Pinview-v1.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1f9e2567f119b4835c05d6750492a3c/jetified-Pinview-v1.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1f9e2567f119b4835c05d6750492a3c/jetified-Pinview-v1.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7664272a40bb93c8cbd68896c1e54192/jetified-Pinview-v1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7664272a40bb93c8cbd68896c1e54192/jetified-Pinview-v1.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7664272a40bb93c8cbd68896c1e54192/jetified-Pinview-v1.3/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

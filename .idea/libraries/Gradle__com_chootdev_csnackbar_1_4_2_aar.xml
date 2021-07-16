@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ea24675e0bdfd408f892a6194652b98/jetified-csnackbar-1.4.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ea24675e0bdfd408f892a6194652b98/jetified-csnackbar-1.4.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ea24675e0bdfd408f892a6194652b98/jetified-csnackbar-1.4.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6235f097893449ece3a54a8cd206e37/jetified-csnackbar-1.4.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6235f097893449ece3a54a8cd206e37/jetified-csnackbar-1.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6235f097893449ece3a54a8cd206e37/jetified-csnackbar-1.4.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.chootdev/csnackbar/1.4.2/36c8589e095f8d207fb5b67f09d735cf6e0600c6/csnackbar-1.4.2-javadoc.jar!/" />

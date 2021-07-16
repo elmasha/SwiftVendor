@@ -9,6 +9,8 @@ com/gas/swiftel/Fragments/EditProfile.java
  com.gas.swiftel.Fragments.EditProfile$6
 com/gas/swiftel/Model/Accessories.java
  com.gas.swiftel.Model.Accessories
+com/gas/swiftel/DirectionsJSONParser.java
+ com.gas.swiftel.DirectionsJSONParser
 com/gas/swiftel/Activity/Home_Activity.java
  com.gas.swiftel.Activity.Home_Activity
  com.gas.swiftel.Activity.Home_Activity$1
@@ -173,8 +175,7 @@ com/gas/swiftel/Activity/VendorMapActivity.java
  com.gas.swiftel.Activity.VendorMapActivity$7
  com.gas.swiftel.Activity.VendorMapActivity$8
  com.gas.swiftel.Activity.VendorMapActivity$9
- com.gas.swiftel.Activity.VendorMapActivity$DataParser
- com.gas.swiftel.Activity.VendorMapActivity$FetchUrl
+ com.gas.swiftel.Activity.VendorMapActivity$DownloadTask
  com.gas.swiftel.Activity.VendorMapActivity$ParserTask
 com/gas/swiftel/Adapter/PaymentAdapter.java
  com.gas.swiftel.Adapter.PaymentAdapter
