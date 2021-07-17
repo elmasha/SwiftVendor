@@ -229,7 +229,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
 
 
     private CardView shopInFoCard;
-    private LinearLayout VendorAssest, LinearfeedBack;
+    private LinearLayout VendorAssest, LinearfeedBack,LayoutGps;
     private RelativeLayout relativeLayoutRefresh;
     private int ShopState;
 
@@ -338,6 +338,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         closed_shop = findViewById(R.id.close_shop24);
         MyProfile = findViewById(R.id.MyProfileImage);
         relativeLayoutRefresh = findViewById(R.id.layout_refresh);
+        LayoutGps = findViewById(R.id.LayoutGps);
         refreshText = findViewById(R.id.refreshText);
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
@@ -613,6 +614,7 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         Dia_time.setText("Date: " + date);
 
 
+
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -668,6 +670,17 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         }.start();
     }
 
+
+    private void Gpstime() {
+        new CountDownTimer(10000, 1000) {
+            public void onTick(long millisUntilFinished) {
+            }
+
+            public void onFinish() {
+               LayoutGps.setVisibility(View.GONE);
+            }
+        }.start();
+    }
 
     private TextView Name, Paytime, UserName, Paytype, PayID, PayTrips, PayAmount, PayPhone, closePay;
     private FloatingActionButton deletePay, printPay;
@@ -1005,6 +1018,12 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                     pickupLng = vendorUser.getLng();
                     cash_trips = vendorUser.getCash_Trips();
 
+                    if (pickupLat == 0 && pickupLng == 0){
+                        LayoutGps.setVisibility(View.VISIBLE);
+                        if (dialog_success != null)dialog_success.dismiss();
+                        Gpstime();
+                    }
+
 
                     vendor_name = First_name;
                     ShopName.setText(""+Shopname);
@@ -1069,6 +1088,9 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
                         break;
                         default:
                     }
+
+
+                    SaveWhenActive();
 
                     if (User_image != null){
 
@@ -1705,6 +1727,45 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
         Vendor_distance_Location();
 
 
+
+    }
+
+
+    private void SaveWhenActive(){
+
+          if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
+                PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
+            return;
+        }
+        lastLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient1);
+
+
+        if (lastLocation != null) {
+
+
+        if (activation_fee.equals("200")) {
+
+            //update to firestore
+            geoFireStoreAvailbale.setLocation(mAuth.getCurrentUser().getUid(), new GeoPoint(lastLocation.getLatitude(), lastLocation.getLongitude()),
+                    new GeoFirestore.CompletionListener() {
+                        @Override
+                        public void onComplete(Exception e) {
+                            if (e!= null){
+
+                            }else {
+                                geoFireStorePreferAvailbale.setLocation(mAuth.getCurrentUser().getUid(), new GeoPoint(lastLocation.getLatitude(), lastLocation.getLongitude()));
+
+                            }
+
+                        }
+                    });
+
+        }
+
+        }
+
     }
 
     private void ToastBack(String message){
@@ -1743,7 +1804,9 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
             final double lat = lastLocation.getLatitude();
             final double lng = lastLocation.getLongitude();
 
-            //update to firestore
+            if (activation_fee.equals("200")){
+
+                     //update to firestore
             geoFireStoreAvailbale.setLocation(mAuth.getCurrentUser().getUid(), new GeoPoint(lastLocation.getLatitude(), lastLocation.getLongitude()),
                     new GeoFirestore.CompletionListener() {
                 @Override
@@ -1774,6 +1837,61 @@ public class MapsVActivity extends FragmentActivity implements OnMapReadyCallbac
 
                 }
             });
+
+
+
+            }else if (activation_fee.equals("0")){
+
+                String uid = mAuth.getCurrentUser().getUid();
+                HashMap<String,Object> updateLocation = new HashMap<>();
+                updateLocation.put("lat",lat);
+                updateLocation.put("lng",lng);
+
+                vendorRef.document(mAuth.getCurrentUser().getUid()).update(updateLocation).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+
+                        if (task.isSuccessful()){
+                            showMarker(pickupLat,pickupLng);
+                            relativeLayoutRefresh.setVisibility(View.GONE);
+                            if (dialog_success != null)dialog_success.dismiss();
+                            successAlert("To receive orders, upload products and manage your shop please Visit Profile to activate your account.");
+
+
+                        }else {
+
+                        }
+
+                    }
+                });
+
+            }else if (activation_fee.equals("00")){
+
+                String uid = mAuth.getCurrentUser().getUid();
+                HashMap<String,Object> updateLocation = new HashMap<>();
+                updateLocation.put("lat",lat);
+                updateLocation.put("lng",lng);
+
+                vendorRef.document(mAuth.getCurrentUser().getUid()).update(updateLocation).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+
+                        if (task.isSuccessful()){
+                            showMarker(pickupLat,pickupLng);
+                            relativeLayoutRefresh.setVisibility(View.GONE);
+                            if (dialog_success != null)dialog_success.dismiss();
+                            successAlert("You have not remitted charges for " + cash_trips + " cash transactions. Remit Ksh/." + UremittedCash + " to be able to proceed");
+
+
+                        }else {
+
+                        }
+
+                    }
+                });
+
+            }
+
 
         }
     }

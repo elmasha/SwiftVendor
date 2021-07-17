@@ -348,7 +348,8 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
         fabGps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LocationUpdates();
+                getMyLocation();
+//                LocationUpdates();
                // DisplayVendorLocation();
             }
         });
@@ -1874,45 +1875,12 @@ public class VendorMapActivity extends FragmentActivity implements OnMapReadyCal
 
 
         mMap.setMyLocationEnabled(true);
+        getMyLocation();
 
 
     }
 
 
-    private void getLastLocation() {
-
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        Task<Location> locationTask = fusedLocationClient.getLastLocation();
-        locationTask.addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                if (location != null) {
-
-                    Toast.makeText(VendorMapActivity.this,
-                            location.getLatitude() + "\n " + location.getLongitude() + "",
-                            Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        locationTask.addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(VendorMapActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.i("TAG", "onFailure: " + e.getLocalizedMessage());
-            }
-        });
-
-    }
 
     private void CheckSettingsAndUpdateLocation() {
         LocationSettingsRequest request = new LocationSettingsRequest.Builder()

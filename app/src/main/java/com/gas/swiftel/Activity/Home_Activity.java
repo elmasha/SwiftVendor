@@ -1,5 +1,6 @@
 package com.gas.swiftel.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 
@@ -149,5 +150,9 @@ public class Home_Activity extends AppCompatActivity {
     }
 
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(getApplicationContext(),MapsVActivity.class));
+    }
 }

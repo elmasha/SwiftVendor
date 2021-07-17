@@ -1301,6 +1301,7 @@ drawable errorimage
 drawable fab_bg_mini
 drawable fab_bg_normal
 drawable fabbg
+drawable fastforward
 drawable feedback
 drawable feedbb
 drawable gascylinder
@@ -1512,6 +1513,7 @@ id Lable_orders
 id LastName
 id LayoutAccessory
 id LayoutCylinder
+id LayoutGps
 id LayoutImage
 id LayoutWalk
 id Lin32

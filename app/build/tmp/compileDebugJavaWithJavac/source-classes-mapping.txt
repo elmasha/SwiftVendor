@@ -11,10 +11,15 @@ com/gas/swiftel/Model/Accessories.java
  com.gas.swiftel.Model.Accessories
 com/gas/swiftel/DirectionsJSONParser.java
  com.gas.swiftel.DirectionsJSONParser
-com/gas/swiftel/Activity/Home_Activity.java
- com.gas.swiftel.Activity.Home_Activity
- com.gas.swiftel.Activity.Home_Activity$1
- com.gas.swiftel.Activity.Home_Activity$2
+com/gas/swiftel/Activity/LoginActivity.java
+ com.gas.swiftel.Activity.LoginActivity
+ com.gas.swiftel.Activity.LoginActivity$1
+ com.gas.swiftel.Activity.LoginActivity$2
+ com.gas.swiftel.Activity.LoginActivity$3
+ com.gas.swiftel.Activity.LoginActivity$4
+ com.gas.swiftel.Activity.LoginActivity$5
+ com.gas.swiftel.Activity.LoginActivity$6
+ com.gas.swiftel.Activity.LoginActivity$7
 com/gas/swiftel/Fragments/OrderDeliveredFragment.java
  com.gas.swiftel.Fragments.OrderDeliveredFragment
  com.gas.swiftel.Fragments.OrderDeliveredFragment$1
@@ -136,47 +141,8 @@ com/gas/swiftel/Adapter/NotifyAdapter.java
  com.gas.swiftel.Adapter.NotifyAdapter$NotifyViewHolder
  com.gas.swiftel.Adapter.NotifyAdapter$NotifyViewHolder$1
  com.gas.swiftel.Adapter.NotifyAdapter$OnItemCickListener
-com/gas/swiftel/Activity/VendorMapActivity.java
- com.gas.swiftel.Activity.VendorMapActivity
- com.gas.swiftel.Activity.VendorMapActivity$1
- com.gas.swiftel.Activity.VendorMapActivity$1$1
- com.gas.swiftel.Activity.VendorMapActivity$10
- com.gas.swiftel.Activity.VendorMapActivity$11
- com.gas.swiftel.Activity.VendorMapActivity$12
- com.gas.swiftel.Activity.VendorMapActivity$13
- com.gas.swiftel.Activity.VendorMapActivity$14
- com.gas.swiftel.Activity.VendorMapActivity$15
- com.gas.swiftel.Activity.VendorMapActivity$16
- com.gas.swiftel.Activity.VendorMapActivity$17
- com.gas.swiftel.Activity.VendorMapActivity$18
- com.gas.swiftel.Activity.VendorMapActivity$19
- com.gas.swiftel.Activity.VendorMapActivity$2
- com.gas.swiftel.Activity.VendorMapActivity$20
- com.gas.swiftel.Activity.VendorMapActivity$21
- com.gas.swiftel.Activity.VendorMapActivity$22
- com.gas.swiftel.Activity.VendorMapActivity$23
- com.gas.swiftel.Activity.VendorMapActivity$24
- com.gas.swiftel.Activity.VendorMapActivity$25
- com.gas.swiftel.Activity.VendorMapActivity$25$1
- com.gas.swiftel.Activity.VendorMapActivity$26
- com.gas.swiftel.Activity.VendorMapActivity$27
- com.gas.swiftel.Activity.VendorMapActivity$28
- com.gas.swiftel.Activity.VendorMapActivity$29
- com.gas.swiftel.Activity.VendorMapActivity$3
- com.gas.swiftel.Activity.VendorMapActivity$30
- com.gas.swiftel.Activity.VendorMapActivity$31
- com.gas.swiftel.Activity.VendorMapActivity$32
- com.gas.swiftel.Activity.VendorMapActivity$33
- com.gas.swiftel.Activity.VendorMapActivity$34
- com.gas.swiftel.Activity.VendorMapActivity$35
- com.gas.swiftel.Activity.VendorMapActivity$4
- com.gas.swiftel.Activity.VendorMapActivity$5
- com.gas.swiftel.Activity.VendorMapActivity$6
- com.gas.swiftel.Activity.VendorMapActivity$7
- com.gas.swiftel.Activity.VendorMapActivity$8
- com.gas.swiftel.Activity.VendorMapActivity$9
- com.gas.swiftel.Activity.VendorMapActivity$DownloadTask
- com.gas.swiftel.Activity.VendorMapActivity$ParserTask
+com/gas/swiftel/Model/Product.java
+ com.gas.swiftel.Model.Product
 com/gas/swiftel/Adapter/PaymentAdapter.java
  com.gas.swiftel.Adapter.PaymentAdapter
  com.gas.swiftel.Adapter.PaymentAdapter$OnItemCickListener
@@ -195,64 +161,37 @@ com/gas/swiftel/Adapter/OrderPager.java
  com.gas.swiftel.Adapter.OrderPager
 com/gas/swiftel/Model/AccessModel.java
  com.gas.swiftel.Model.AccessModel
-com/gas/swiftel/Activity/MapsVActivity.java
- com.gas.swiftel.Activity.MapsVActivity
- com.gas.swiftel.Activity.MapsVActivity$1
- com.gas.swiftel.Activity.MapsVActivity$10
- com.gas.swiftel.Activity.MapsVActivity$11
- com.gas.swiftel.Activity.MapsVActivity$12
- com.gas.swiftel.Activity.MapsVActivity$13
- com.gas.swiftel.Activity.MapsVActivity$14
- com.gas.swiftel.Activity.MapsVActivity$15
- com.gas.swiftel.Activity.MapsVActivity$16
- com.gas.swiftel.Activity.MapsVActivity$17
- com.gas.swiftel.Activity.MapsVActivity$18
- com.gas.swiftel.Activity.MapsVActivity$19
- com.gas.swiftel.Activity.MapsVActivity$2
- com.gas.swiftel.Activity.MapsVActivity$20
- com.gas.swiftel.Activity.MapsVActivity$20$1
- com.gas.swiftel.Activity.MapsVActivity$21
- com.gas.swiftel.Activity.MapsVActivity$22
- com.gas.swiftel.Activity.MapsVActivity$23
- com.gas.swiftel.Activity.MapsVActivity$24
- com.gas.swiftel.Activity.MapsVActivity$25
- com.gas.swiftel.Activity.MapsVActivity$26
- com.gas.swiftel.Activity.MapsVActivity$27
- com.gas.swiftel.Activity.MapsVActivity$28
- com.gas.swiftel.Activity.MapsVActivity$28$1
- com.gas.swiftel.Activity.MapsVActivity$29
- com.gas.swiftel.Activity.MapsVActivity$29$1
- com.gas.swiftel.Activity.MapsVActivity$3
- com.gas.swiftel.Activity.MapsVActivity$30
- com.gas.swiftel.Activity.MapsVActivity$31
- com.gas.swiftel.Activity.MapsVActivity$32
- com.gas.swiftel.Activity.MapsVActivity$33
- com.gas.swiftel.Activity.MapsVActivity$34
- com.gas.swiftel.Activity.MapsVActivity$4
- com.gas.swiftel.Activity.MapsVActivity$5
- com.gas.swiftel.Activity.MapsVActivity$6
- com.gas.swiftel.Activity.MapsVActivity$7
- com.gas.swiftel.Activity.MapsVActivity$8
- com.gas.swiftel.Activity.MapsVActivity$9
+com/gas/swiftel/Activity/CustomerNotifyActivity.java
+ com.gas.swiftel.Activity.CustomerNotifyActivity
+ com.gas.swiftel.Activity.CustomerNotifyActivity$1
+ com.gas.swiftel.Activity.CustomerNotifyActivity$2
+ com.gas.swiftel.Activity.CustomerNotifyActivity$3
 com/gas/swiftel/Model/Gas_Cylinder.java
  com.gas.swiftel.Model.Gas_Cylinder
 com/gas/swiftel/Activity/PrivacyActivity.java
  com.gas.swiftel.Activity.PrivacyActivity
 com/gas/swiftel/Service/MyFirebaseIdService.java
  com.gas.swiftel.Service.MyFirebaseIdService
-com/gas/swiftel/Activity/AddItemsActivity.java
- com.gas.swiftel.Activity.AddItemsActivity
- com.gas.swiftel.Activity.AddItemsActivity$1
- com.gas.swiftel.Activity.AddItemsActivity$2
- com.gas.swiftel.Activity.AddItemsActivity$3
- com.gas.swiftel.Activity.AddItemsActivity$4
- com.gas.swiftel.Activity.AddItemsActivity$4$1
- com.gas.swiftel.Activity.AddItemsActivity$4$2
- com.gas.swiftel.Activity.AddItemsActivity$5
- com.gas.swiftel.Activity.AddItemsActivity$6
- com.gas.swiftel.Activity.AddItemsActivity$7
- com.gas.swiftel.Activity.AddItemsActivity$7$1
- com.gas.swiftel.Activity.AddItemsActivity$8
+com/gas/swiftel/Activity/VendorRegActivity.java
+ com.gas.swiftel.Activity.VendorRegActivity
+ com.gas.swiftel.Activity.VendorRegActivity$1
+ com.gas.swiftel.Activity.VendorRegActivity$10
+ com.gas.swiftel.Activity.VendorRegActivity$11
+ com.gas.swiftel.Activity.VendorRegActivity$11$1
+ com.gas.swiftel.Activity.VendorRegActivity$11$2
+ com.gas.swiftel.Activity.VendorRegActivity$11$2$1
+ com.gas.swiftel.Activity.VendorRegActivity$12
+ com.gas.swiftel.Activity.VendorRegActivity$13
+ com.gas.swiftel.Activity.VendorRegActivity$14
+ com.gas.swiftel.Activity.VendorRegActivity$15
+ com.gas.swiftel.Activity.VendorRegActivity$2
+ com.gas.swiftel.Activity.VendorRegActivity$3
+ com.gas.swiftel.Activity.VendorRegActivity$4
+ com.gas.swiftel.Activity.VendorRegActivity$5
+ com.gas.swiftel.Activity.VendorRegActivity$6
+ com.gas.swiftel.Activity.VendorRegActivity$7
+ com.gas.swiftel.Activity.VendorRegActivity$8
+ com.gas.swiftel.Activity.VendorRegActivity$9
 com/gas/swiftel/Model/Sender.java
  com.gas.swiftel.Model.Sender
 com/gas/swiftel/Model/Result.java
@@ -411,39 +350,102 @@ com/gas/swiftel/Fragments/Myshop.java
  com.gas.swiftel.Fragments.Myshop$9
 com/gas/swiftel/Model/ResultStk.java
  com.gas.swiftel.Model.ResultStk
-com/gas/swiftel/Activity/CustomerNotifyActivity.java
- com.gas.swiftel.Activity.CustomerNotifyActivity
- com.gas.swiftel.Activity.CustomerNotifyActivity$1
- com.gas.swiftel.Activity.CustomerNotifyActivity$2
- com.gas.swiftel.Activity.CustomerNotifyActivity$3
-com/gas/swiftel/Model/Product.java
- com.gas.swiftel.Model.Product
-com/gas/swiftel/Activity/LoginActivity.java
- com.gas.swiftel.Activity.LoginActivity
- com.gas.swiftel.Activity.LoginActivity$1
- com.gas.swiftel.Activity.LoginActivity$2
- com.gas.swiftel.Activity.LoginActivity$3
- com.gas.swiftel.Activity.LoginActivity$4
- com.gas.swiftel.Activity.LoginActivity$5
- com.gas.swiftel.Activity.LoginActivity$6
- com.gas.swiftel.Activity.LoginActivity$7
-com/gas/swiftel/Activity/VendorRegActivity.java
- com.gas.swiftel.Activity.VendorRegActivity
- com.gas.swiftel.Activity.VendorRegActivity$1
- com.gas.swiftel.Activity.VendorRegActivity$10
- com.gas.swiftel.Activity.VendorRegActivity$11
- com.gas.swiftel.Activity.VendorRegActivity$11$1
- com.gas.swiftel.Activity.VendorRegActivity$11$2
- com.gas.swiftel.Activity.VendorRegActivity$11$2$1
- com.gas.swiftel.Activity.VendorRegActivity$12
- com.gas.swiftel.Activity.VendorRegActivity$13
- com.gas.swiftel.Activity.VendorRegActivity$14
- com.gas.swiftel.Activity.VendorRegActivity$15
- com.gas.swiftel.Activity.VendorRegActivity$2
- com.gas.swiftel.Activity.VendorRegActivity$3
- com.gas.swiftel.Activity.VendorRegActivity$4
- com.gas.swiftel.Activity.VendorRegActivity$5
- com.gas.swiftel.Activity.VendorRegActivity$6
- com.gas.swiftel.Activity.VendorRegActivity$7
- com.gas.swiftel.Activity.VendorRegActivity$8
- com.gas.swiftel.Activity.VendorRegActivity$9
+com/gas/swiftel/Activity/AddItemsActivity.java
+ com.gas.swiftel.Activity.AddItemsActivity
+ com.gas.swiftel.Activity.AddItemsActivity$1
+ com.gas.swiftel.Activity.AddItemsActivity$2
+ com.gas.swiftel.Activity.AddItemsActivity$3
+ com.gas.swiftel.Activity.AddItemsActivity$4
+ com.gas.swiftel.Activity.AddItemsActivity$4$1
+ com.gas.swiftel.Activity.AddItemsActivity$4$2
+ com.gas.swiftel.Activity.AddItemsActivity$5
+ com.gas.swiftel.Activity.AddItemsActivity$6
+ com.gas.swiftel.Activity.AddItemsActivity$7
+ com.gas.swiftel.Activity.AddItemsActivity$7$1
+ com.gas.swiftel.Activity.AddItemsActivity$8
+com/gas/swiftel/Activity/Home_Activity.java
+ com.gas.swiftel.Activity.Home_Activity
+ com.gas.swiftel.Activity.Home_Activity$1
+ com.gas.swiftel.Activity.Home_Activity$2
+com/gas/swiftel/Activity/VendorMapActivity.java
+ com.gas.swiftel.Activity.VendorMapActivity
+ com.gas.swiftel.Activity.VendorMapActivity$1
+ com.gas.swiftel.Activity.VendorMapActivity$1$1
+ com.gas.swiftel.Activity.VendorMapActivity$10
+ com.gas.swiftel.Activity.VendorMapActivity$11
+ com.gas.swiftel.Activity.VendorMapActivity$12
+ com.gas.swiftel.Activity.VendorMapActivity$13
+ com.gas.swiftel.Activity.VendorMapActivity$14
+ com.gas.swiftel.Activity.VendorMapActivity$15
+ com.gas.swiftel.Activity.VendorMapActivity$16
+ com.gas.swiftel.Activity.VendorMapActivity$17
+ com.gas.swiftel.Activity.VendorMapActivity$18
+ com.gas.swiftel.Activity.VendorMapActivity$19
+ com.gas.swiftel.Activity.VendorMapActivity$2
+ com.gas.swiftel.Activity.VendorMapActivity$20
+ com.gas.swiftel.Activity.VendorMapActivity$21
+ com.gas.swiftel.Activity.VendorMapActivity$22
+ com.gas.swiftel.Activity.VendorMapActivity$23
+ com.gas.swiftel.Activity.VendorMapActivity$24
+ com.gas.swiftel.Activity.VendorMapActivity$25
+ com.gas.swiftel.Activity.VendorMapActivity$25$1
+ com.gas.swiftel.Activity.VendorMapActivity$26
+ com.gas.swiftel.Activity.VendorMapActivity$27
+ com.gas.swiftel.Activity.VendorMapActivity$28
+ com.gas.swiftel.Activity.VendorMapActivity$29
+ com.gas.swiftel.Activity.VendorMapActivity$3
+ com.gas.swiftel.Activity.VendorMapActivity$30
+ com.gas.swiftel.Activity.VendorMapActivity$31
+ com.gas.swiftel.Activity.VendorMapActivity$32
+ com.gas.swiftel.Activity.VendorMapActivity$33
+ com.gas.swiftel.Activity.VendorMapActivity$4
+ com.gas.swiftel.Activity.VendorMapActivity$5
+ com.gas.swiftel.Activity.VendorMapActivity$6
+ com.gas.swiftel.Activity.VendorMapActivity$7
+ com.gas.swiftel.Activity.VendorMapActivity$8
+ com.gas.swiftel.Activity.VendorMapActivity$9
+ com.gas.swiftel.Activity.VendorMapActivity$DownloadTask
+ com.gas.swiftel.Activity.VendorMapActivity$ParserTask
+com/gas/swiftel/Activity/MapsVActivity.java
+ com.gas.swiftel.Activity.MapsVActivity
+ com.gas.swiftel.Activity.MapsVActivity$1
+ com.gas.swiftel.Activity.MapsVActivity$10
+ com.gas.swiftel.Activity.MapsVActivity$11
+ com.gas.swiftel.Activity.MapsVActivity$12
+ com.gas.swiftel.Activity.MapsVActivity$13
+ com.gas.swiftel.Activity.MapsVActivity$14
+ com.gas.swiftel.Activity.MapsVActivity$15
+ com.gas.swiftel.Activity.MapsVActivity$16
+ com.gas.swiftel.Activity.MapsVActivity$17
+ com.gas.swiftel.Activity.MapsVActivity$18
+ com.gas.swiftel.Activity.MapsVActivity$19
+ com.gas.swiftel.Activity.MapsVActivity$2
+ com.gas.swiftel.Activity.MapsVActivity$20
+ com.gas.swiftel.Activity.MapsVActivity$21
+ com.gas.swiftel.Activity.MapsVActivity$21$1
+ com.gas.swiftel.Activity.MapsVActivity$22
+ com.gas.swiftel.Activity.MapsVActivity$23
+ com.gas.swiftel.Activity.MapsVActivity$24
+ com.gas.swiftel.Activity.MapsVActivity$25
+ com.gas.swiftel.Activity.MapsVActivity$26
+ com.gas.swiftel.Activity.MapsVActivity$27
+ com.gas.swiftel.Activity.MapsVActivity$28
+ com.gas.swiftel.Activity.MapsVActivity$29
+ com.gas.swiftel.Activity.MapsVActivity$29$1
+ com.gas.swiftel.Activity.MapsVActivity$3
+ com.gas.swiftel.Activity.MapsVActivity$30
+ com.gas.swiftel.Activity.MapsVActivity$31
+ com.gas.swiftel.Activity.MapsVActivity$31$1
+ com.gas.swiftel.Activity.MapsVActivity$32
+ com.gas.swiftel.Activity.MapsVActivity$33
+ com.gas.swiftel.Activity.MapsVActivity$34
+ com.gas.swiftel.Activity.MapsVActivity$35
+ com.gas.swiftel.Activity.MapsVActivity$36
+ com.gas.swiftel.Activity.MapsVActivity$37
+ com.gas.swiftel.Activity.MapsVActivity$38
+ com.gas.swiftel.Activity.MapsVActivity$4
+ com.gas.swiftel.Activity.MapsVActivity$5
+ com.gas.swiftel.Activity.MapsVActivity$6
+ com.gas.swiftel.Activity.MapsVActivity$7
+ com.gas.swiftel.Activity.MapsVActivity$8
+ com.gas.swiftel.Activity.MapsVActivity$9
